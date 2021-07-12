@@ -11,7 +11,6 @@ const Landing = () => {
             <WhatSection />
             <TokenSection />
             <WhySection />
-            <div className='p-10 bg-black opacity-90 h-screen'></div>
         </div>
     )
 }
