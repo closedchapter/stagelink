@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <div className='p-10 bg-black opacity-90 h- text-white'>
-            <div className='opacity-70'>Contact us</div>
+            <div className='opacity-70'>© STAGELINK 2021. All rights reserved</div>
         </div>
     )
 }
