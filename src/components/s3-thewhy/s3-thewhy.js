@@ -1,8 +1,5 @@
 import React from 'react'
 import Manifest from './manifest.json'
-const Data = require('./data.png');
-const Support = require('./support.png');
-const Team = require('./team.png');
 
 const Section = (data) => {
     var i = data.data
