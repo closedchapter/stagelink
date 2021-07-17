@@ -27,7 +27,7 @@ const LandingContent = () => {
     return (
     <div className='bg-black'>
         <div className='grid grid-flow-row bg-black text-white md:grid-flow-col h-screen animate-fade-in-down'>
-            <div className='flex flex-col justify-center p-3 mt-9 px-10 md:mx-0 lg:pl-44 lg:mt-40 lg:p-0 lg:self-start'>
+            <div className='flex flex-col justify-center p-3 mt-9 pl-5 px-10 md:mx-0 lg:pl-44 lg:mt-40 lg:p-0 lg:self-start'>
                 <div className='leading-tight lg:mb-12 font-extrabold text-5xl lg:text-7xl mb-5'>{Manifest.motto}</div>
                 <div className='leading-normal font-normal text-base lg:text-2xl opacity-70 mb-7'>{Manifest.subtitle}<div className='font-bold'>- so we decided to do it.</div></div>
                 <div className='mb-3'><CTA/></div>
