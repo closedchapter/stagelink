@@ -36,7 +36,7 @@ const Tokenomics = () => {
                     </div>
                     <div className='space-y-1'>
                         <div className='font-medium text-sm leading-0 opacity-50 lg:text-lg'>up to</div>
-                        <div className='font-extrabold text-2xl leading-0 opacity-90 lg:text-4xl'>20%</div>
+                        <div className='font-extrabold text-2xl leading-0 opacity-90 lg:text-4xl'>10%</div>
                         <div className='font-medium text-sm leading-0 opacity- lg:text-lg'>of each and every sale on the merch store is rewarded to you.</div>
                     </div>
                     <button className='mx-auto py-3 px-6 lg:py-6 lg:px-12 scale-100 select-none text-center max-w-max text-bl text-base font-bold rounded-full px-5 bg-blue-700 active:bg-blue-800 transform transition active:scale-110 duration-300 ease-out'>Join community</button>

@@ -8,6 +8,7 @@ const Landing = () => {
     return (
         <div>
             <Hero />
+            <div className='bg-gradient-to-b from-black to-gray-800 p-10'></div>
             <WhatSection />
             <TokenSection />
             <WhySection />
