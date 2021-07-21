@@ -1,9 +1,41 @@
-import React from 'react'
+// eslint-disable-next-line no-unused-vars
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
+    const [modal, setModal] = useState(false);
+
+    const Modal = () => {
+        const Close = <svg className="w-6 h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" /></svg>
+        console.log(modal)
+        return (
+            <div className='animate-modal-fade-in-down text-white fixed flex flex-col inset-0 h-1/2 bg-gray-800 m-3 rounded-md p-3'>
+                    <button onClick={() => setModal(!modal)} className='text-white text-opacity-50 ml-auto p-3 mt-4 mx-1'>{Close}</button>
+                    <div className='flex flex-col p-2'>
+                        <div className='text-white text-opacity-50 font-medium text-base'>{"Rewards & Benefits"}</div>
+                    </div>
+                </div>
+        )
+    }
+
+    // useEffect(() => console.log("re-render because x changed:", modal), [modal])
+
     return (
-        <div className='fixed bg-gray-800 bg-opacity-80 text-white rounded-2xl right-0 p-1 px-2.5 m-5'>
-            <svg class="w-6 h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 6h18M3 12h18M3 18h18"></path></svg>
+        <div className='fixed flex p-12 px-7 w-full items-center justify-center z-40'>
+            <div className='flex-1'>
+                <Link to={'/'} className='font-bold text-xl text-white text-opacity-40 hover:text-opacity-80 z-50 relative'>Stagelink</Link>
+            </div>
+            <button onClick={() => setModal(!modal)} className='appearance-none bg-white bg-opacity-20 text-white rounded-2xl p-1.5 px-4'>
+                <svg className="w-4 h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M2 6h20M2 12h20M2 18h20"></path></svg>
+            </button>
+            <div>
+            {
+                !modal ?
+                null
+                :
+                <div><Modal /></div>
+            }
+            </div>
         </div>
     )
 }

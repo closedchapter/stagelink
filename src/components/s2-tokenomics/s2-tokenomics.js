@@ -25,17 +25,17 @@ const Tokenomics = () => {
                 <div className='font-normal text-sm leading-relaxed opacity-90 md:text-base'>All holders of our utility token are rewarded generously because we understand how important your support is. Becoming a holder means you lose nothing and gain everything.</div>
                 <div className='px-12 text-left space-y-12 my-12 mt-12 flex flex-col pt-12 border-t border-white border-opacity-20'>
                     <div className='space-y-1'>
-                        <div className='font-medium text-sm leading-0 opacity-50 lg:text-lg'>up to</div>
+                        <div className='font-medium text-sm leading-0 opacity-50 lg:text-lg hidden'>up to</div>
                         <div className='font-extrabold text-2xl leading-0 opacity-90 lg:text-4xl'>5%</div>
                         <div className='font-medium text-sm leading-0 opacity- lg:text-lg'>is rewarded to you on all revenue generated from fights.</div>
                     </div>
                     <div className='space-y-1'>
-                        <div className='font-medium text-sm leading-0 opacity-50 lg:text-lg'>up to</div>
+                        <div className='font-medium text-sm leading-0 opacity-50 lg:text-lg hidden'>up to</div>
                         <div className='font-extrabold text-2xl leading-0 opacity-90 lg:text-4xl'>3%</div>
                         <div className='font-medium text-sm leading-0 opacity- lg:text-lg'>of all transactions are rewarded to you in the form of dividends.</div>
                     </div>
                     <div className='space-y-1'>
-                        <div className='font-medium text-sm leading-0 opacity-50 lg:text-lg'>up to</div>
+                        <div className='font-medium text-sm leading-0 opacity-50 lg:text-lg hidden'>up to</div>
                         <div className='font-extrabold text-2xl leading-0 opacity-90 lg:text-4xl'>10%</div>
                         <div className='font-medium text-sm leading-0 opacity- lg:text-lg'>of each and every sale on the merch store is rewarded to you.</div>
                     </div>

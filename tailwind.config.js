@@ -16,7 +16,8 @@ module.exports = {
         }
     },
     animation: {
-        'fade-in-down': 'fade-in-down 0.75s ease-out'
+        'fade-in-down': 'fade-in-down 0.75s ease-out',
+        'modal-fade-in-down': 'fade-in-down 0.25s ease-out'
     }
     },
   },

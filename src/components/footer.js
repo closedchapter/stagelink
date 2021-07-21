@@ -6,11 +6,14 @@ import Telegram from './footer/telegram.png'
 
 const Footer = () => {
     return (
-        <div className='p-10 pt-20 bg-black bg-opacity-90 text-white space-y-7'>
-            <div className='flex w-full'>
-                <img src={Reddit} alt='' className='w-full filter brightness- bg-white'/>
+        <div className='p-10 bg-black bg-opacity-90 text-white'>
+            <div className='flex items-start justify-between w-full mb-10 bg-white p-2 rounded-xl bg-opacity-20'>
+                <img src={Reddit} alt='' className='w-8 h-full'/>
+                <img src={Instagram} alt='' className='w-8 h-full'/>
+                <img src={Twitter} alt='' className='w-8 h-full'/>
+                <img src={Telegram} alt='' className='w-8 h-full'/>
             </div>
-            <div className='opacity-60 text-xs font-medium'>© STAGELINK 2021. All rights reserved</div>
+            <div className='opacity-30 text-xs font-medium'>© STAGELINK 2021. All rights reserved</div>
         </div>
     )
 }

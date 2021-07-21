@@ -26,13 +26,13 @@ const CTA = () => {
 const LandingContent = () => {
     return (
     <div className='bg-black'>
-        <div className='grid grid-flow-row bg-black text-white md:grid-flow-col h-screen animate-fade-in-down'>
-            <div className='flex flex-col justify-center p-3 mt-9 pl-5 px-10 md:mx-0 lg:pl-44 lg:mt-40 lg:p-0 lg:self-start'>
-                <div className='leading-tight lg:mb-12 font-extrabold text-5xl lg:text-7xl mb-5'>{Manifest.motto}</div>
-                <div className='leading-normal font-normal text-base lg:text-2xl opacity-70 mb-7'>{Manifest.subtitle}<div className='font-bold'>- so we decided to do it.</div></div>
+        <div className='grid grid-flow-row bg-black text-white md:grid-flow-col min-h-screen animate-fade-in-down'>
+            <div className='flex flex-col justify-center p-3 mt-20 pl-7 md:mx-0 lg:pl-44 lg:mt-40 lg:p-0 lg:self-start'>
+                <div className='leading-tight lg:mb-12 font-bold text-5xl lg:text-7xl mb-3'>{Manifest.motto}</div>
+                <div className='leading-normal font-medium text-base lg:text-2xl opacity-50 mb-7'>{Manifest.subtitle}<div className='font-bold'>- so we decided to do it.</div></div>
                 <div className='mb-3'><CTA/></div>
             </div>
-            <div className='select-none flex flex-col justify-start overflow-hidden md:justify-center md:p-10 md:col-span-4'>
+            <div className='select-none flex flex-col justify-start overflow-hidden md:justify-center md:p-10 md:col-span-4 mb-16 p-10'>
                 <img src={Image} alt='boxing' className='transform scale-150 filter contrast-125 brightness-110'/>
             </div>
         </div>
