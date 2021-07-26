@@ -44,6 +44,17 @@ const Tokenomics = () => {
             </div>
             <div className='font-extrabold text-3xl leading-snug opacity-90 md:text-5xl mb-7 text-center'>Our loyalty Rewards</div>
             <div className='font-normal text-lg leading-snug opacity-90 md:text-xl mb-14 text-center'>We value our holders so to show our appreciation we are the first token to implement the loyalty rewards, holders that don't sell their token will get 25% of their purchasing fees weekly. 5% of the initial supply is allocated in a wallet to the loyalty rewards.</div>
+            <div className='font-normal text-lg leading-snug opacity-90 md:text-xl mb-14 text-left space-y-2'>
+                <div className='space-y-2 mb-7'>
+                    <div>5% Marketing wallet supply</div>
+                    <div>5% Loyalty Rewards wallet</div>
+                    <div>10% to Burns wallet</div>
+                </div>
+                <div>10% of merch profit goes to holders</div>
+                <div>10% of merch gross profit will be re-invested back into the tokens</div>
+                <div>6% of gross profit from fights to holders</div>
+                <div>6% from gross profit income to liquidity</div>
+            </div>
             <div className='font-extrabold text-3xl leading-snug opacity-90 md:text-5xl md:mb-7 text-left'>Have a look at our technicals</div>
         </div>
         <div className=''>

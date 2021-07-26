@@ -68,6 +68,9 @@ const Nav = () => {
             <div id="we-are" ><WhatSection /></div>
             <div id="our-purpose"><TokenSection /></div>
             <div id="why" ><WhySection /></div>
+            <div className='p-10 bg-white flex justify-center'>
+                <div className='font-extrabold text-2xl opacity-80' >Our Roadmap</div>
+            </div>
         </div>
     )
 }
