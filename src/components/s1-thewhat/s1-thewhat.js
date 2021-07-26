@@ -17,11 +17,11 @@ const SectionContent = () => {
         </div>
         <div className='grid lg:grid-flow-col bg-white p-5 lg:p-10 lg:text-center blog-shadow-dreamy'>
             <div className='lg:px-10 mb-7 border-b lg:border-b-0 lg:border-r border-gray-100 pb-5'>
-                <div className='lg:h-10 lg:mb-0 font-extrabold text-base leading-snug mb-2 opacity-90 md:text-lg'>THE PROBLEM</div>
+                <div className='lg:h-10 lg:mb-0 font-extrabold text-base leading-snug mb-2 opacity-90 md:text-lg'>THE OLD</div>
                 <div className='lg:mt-auto font-normal text-sm leading-relaxed opacity-80'>{Manifest.main[0]['main']}</div>
             </div>
             <div className='lg:px-10'>
-                <div className=' lg:h-10 font-extrabold text-base leading-snug mb-2 opacity-90 md:text-lg'>THE SOLUTION</div>
+                <div className=' lg:h-10 font-extrabold text-base leading-snug mb-2 opacity-90 md:text-lg'>THE NEW</div>
                 <div className='lg:mt-auto font-normal text-sm leading-relaxed opacity-80'>{Manifest.main[1]['main']}</div>
             </div>
         </div>

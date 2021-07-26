@@ -7,7 +7,7 @@ import Telegram from './footer/telegram.png'
 const Footer = () => {
     return (
         <div className='p-10 bg-black bg-opacity-90 text-white'>
-            <div className='flex items-start justify-between w-full mb-10 bg-white p-2 rounded-xl bg-opacity-20'>
+            <div className='flex items-start justify-between w-full mb-10 p-2 rounded-xl'>
                 <img src={Reddit} alt='' className='w-8 h-full'/>
                 <img src={Instagram} alt='' className='w-8 h-full'/>
                 <img src={Twitter} alt='' className='w-8 h-full'/>
