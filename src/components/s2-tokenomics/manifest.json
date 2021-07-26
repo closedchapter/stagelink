@@ -8,16 +8,16 @@
             "information" : "1 quadrillion"
         },
         {
-            "name" : "Transaction charge",
-            "information" : "12% on buy & sell"
-        },
-        {
             "name" : "Estimated holders",
             "information" : "Forecasted 30k+ during inital launch week"
         },
         {
             "name" : "Estimated market cap",
             "information" : "Predicted to strike past 30 mil USD point"
+        },
+        {
+            "name" : "Transaction charge",
+            "information" : "12% on buy & sell"
         }
     ]
 }

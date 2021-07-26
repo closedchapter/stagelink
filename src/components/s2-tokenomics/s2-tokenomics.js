@@ -39,15 +39,23 @@ const Tokenomics = () => {
                         <div className='font-extrabold text-2xl leading-0 opacity-90 lg:text-4xl'>10%</div>
                         <div className='font-medium text-sm leading-0 opacity- lg:text-lg'>of each and every sale on the merch store is rewarded to you.</div>
                     </div>
-                    <button className='mx-auto py-3 px-6 lg:py-6 lg:px-12 scale-100 select-none text-center max-w-max text-bl text-base font-bold rounded-full px-5 bg-blue-700 active:bg-blue-800 transform transition active:scale-110 duration-300 ease-out'>Join community</button>
+                    <button id="rewards" className='mx-auto py-3 px-6 lg:py-6 lg:px-12 scale-100 select-none text-center max-w-max text-bl text-base font-bold rounded-full px-5 bg-blue-700 active:bg-blue-800 transform transition active:scale-110 duration-300 ease-out'>Join community</button>
                 </div>
             </div>
+            <div className='font-extrabold text-3xl leading-snug opacity-90 md:text-5xl mb-7 text-center'>Our loyalty Rewards</div>
+            <div className='font-normal text-lg leading-snug opacity-90 md:text-xl mb-14 text-center'>We value our holders so to show our appreciation we are the first token to implement the loyalty rewards, holders that don't sell their token will get 25% of their purchasing fees weekly. 5% of the initial supply is allocated in a wallet to the loyalty rewards.</div>
             <div className='font-extrabold text-3xl leading-snug opacity-90 md:text-5xl md:mb-7 text-left'>Have a look at our technicals</div>
         </div>
         <div className=''>
             {Manifest.cards.map((i, key) => {
                 return <Section key={key} data={i}/>;
                 })}
+        </div>
+        <div>
+            <div className='font-medium text-sm leading-0 opacity-50 lg:text-lg'>3% for marketing</div>
+            <div className='font-medium text-sm leading-0 opacity-50 lg:text-lg'>3% for business/brand development</div>
+            <div className='font-medium text-sm leading-0 opacity-50 lg:text-lg'>3% to liquidity</div>
+            <div className='font-medium text-sm leading-0 opacity-50 lg:text-lg'>3% to holders</div>
         </div>
     </div>
     )
