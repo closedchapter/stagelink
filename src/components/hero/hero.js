@@ -1,6 +1,7 @@
 import React from 'react'
 import Manifest from './manifest.json'
 import Image from './image.jpeg'
+import { Link } from 'react-router-dom';
 
 const Arrow = () => {
     return (
@@ -11,14 +12,14 @@ const Arrow = () => {
 const CTA = () => {
     return (
         <div className='flex space-x-5'>
-            <button className='flex items-center py-2 px-4 lg:py-6 lg:px-12 scale-100 select-none text-center max-w-max text-black text-sm font-bold rounded-full bg-white active:bg-gray-400 transform transition active:scale-110 duration-300 ease-out'>
+            <button className='flex items-center py-2 px-4 lg:px-5 scale-100 select-none text-center max-w-max text-black text-sm lg:text-base font-bold rounded-full bg-white active:bg-gray-400 transform transition active:scale-110 duration-300 ease-out'>
                 <div className='mr-3'>Buy Now</div>
                 <div className='w-3.5'><Arrow /></div>
             </button>
-            <button className='flex items-center py-2 px-4 lg:py-6 lg:px-12 scale-100 select-none text-center max-w-max text-black text-sm font-bold rounded-full bg-white bg-opacity-20 text-white active:bg-opacity-5 transform transition-transform active:scale-110 duration-300 ease-out'>
+            <Link to={'./upcoming'} className='flex items-center py-2 px-4 lg:px-5 scale-100 select-none text-center max-w-max text-black text-sm lg:text-base font-bold rounded-full bg-white bg-opacity-20 text-white active:bg-opacity-5 transform transition-transform active:scale-110 duration-300 ease-out'>
                 <div className='mr-3'>View Upcoming</div>
                 <div className='w-3.5'><Arrow /></div>
-            </button>
+            </Link>
         </div>
     )
 }
@@ -28,8 +29,8 @@ const LandingContent = () => {
     <div className='bg-black'>
         <div className='grid grid-flow-row bg-black text-white md:grid-flow-col min-h-screen animate-fade-in-down'>
             <div className='flex flex-col justify-center p-3 mt-20 pl-7 md:mx-0 lg:pl-44 lg:mt-40 lg:p-0 lg:self-start'>
-                <div className='leading-tight lg:mb-12 font-bold text-5xl lg:text-7xl mb-3'>{Manifest.motto}</div>
-                <div className='leading-normal font-medium text-base lg:text-2xl opacity-50 mb-7'>{Manifest.subtitle}</div>
+                <div className='leading-tight lg:mb-12 font-bold text-4xl lg:text-6xl mb-3'>{Manifest.motto}</div>
+                <div className='leading-normal font-medium text-base lg:text-xl opacity-50 mb-7'>{Manifest.subtitle}</div>
                 <div className='mb-3'><CTA/></div>
             </div>
             <div className='select-none flex flex-col justify-start overflow-hidden md:justify-center md:p-10 md:col-span-4 mb-16 p-10'>

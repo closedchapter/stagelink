@@ -20,3 +20,10 @@ body {
 .blog-shadow-dreamy {
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
+
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(./futura.otf) format('otf');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
