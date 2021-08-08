@@ -16,13 +16,11 @@ const SectionContent = () => {
             </div>
         </div>
         <div className='grid lg:grid-flow-col bg-white p-5 lg:p-10 lg:text-center blog-shadow-dreamy'>
-            <div className='lg:px-10 mb-7 border-b lg:border-b-0 lg:border-r border-gray-100 pb-5'>
-                <div className='lg:h-10 lg:mb-0 font-extrabold text-base leading-snug mb-2 opacity-90 md:text-lg'>THE OLD</div>
-                <div className='lg:mt-auto font-normal text-sm leading-relaxed opacity-80'>{Manifest.main[0]['main']}</div>
-            </div>
-            <div className='lg:px-10'>
-                <div className=' lg:h-10 font-extrabold text-base leading-snug mb-2 opacity-90 md:text-lg'>THE NEW</div>
-                <div className='lg:mt-auto font-normal text-sm leading-relaxed opacity-80'>{Manifest.main[1]['main']}</div>
+            <div className='lg:px-10 mb-7 border-b lg:border-b-0 lg:border-r border-gray-100 pb-5 space-y-3'>
+                <div className='lg:mt-auto font-normal text-sm leading-relaxed opacity-80 mt-1'>The old PPV can only be bought through fiat which will be made more redundant as crypto becomes more prominent, however StageLink offers the cryptocurrency option.</div>
+                <div className='lg:mt-auto font-normal text-sm leading-relaxed opacity-80 mt-1'>PPV is bought for entertainment purposes, however some the fighte can be underwhelming and leave a sour taste when matches are quickly concluded, however buying from stagelink will provide other benefits so the customer is always left happy.</div>
+                <div className='lg:mt-auto font-normal text-sm leading-relaxed opacity-80 mt-1'>The current  PPV is over priced due the monopolisation of the industry, we will charge more fair prices so that the common working man afford to see fights as we understand many people aspire to be able to watch these fights live and in person.</div>
+                <div className='lg:mt-auto font-normal text-sm leading-relaxed opacity-80 mt-1'>Combat sports fighters sometimes get underpaid/taken advantage of as they are not many places that host fights etc due to monopolisation and not all fighters are prominent. Corporations receive a large amount of profits while fighters do a large amount of the work work. StageLink rewards the common people and in this scenario the fighters are comparable to common people as we aim to pay them fairly and shine light on lesser known fighters so they can improve their careers.</div>
             </div>
         </div>
     </div>

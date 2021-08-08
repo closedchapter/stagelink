@@ -31,11 +31,11 @@ const Nav = () => {
         <div className='fixed flex p-4 px-7 w-full items-center justify-center z-40 bg-gray-900'>
             <div className='flex-1'>
                 <button className='flex font-bold text-xl text-white z-0 relative'>
-                    <div>Stage</div>
                     <div>
                         <img className='w-5 h-full' alt='' src={require('./logo.svg').default}/>
                     </div>
-                    <div className=''>link</div>
+                    <div>Stage</div>
+                    <div className=''>Link</div>
                     </button>
             </div>
             <div className='hidden md:block space-x-10 flex-1'>
