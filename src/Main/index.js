@@ -21,7 +21,7 @@ const Landing = () => {
                     <div className='leading-0 mr-3'>Buy Now</div>
                     <div className='w-3.5'>{NavSVG}</div>
                 </a>
-                <button className='shadow-btn flex mx-auto mt-5 items-center py-2 px-4 lg:px-5 select-none text-center max-w-max text-black text-base font-bold rounded-full bg-white hover:bg-gray-400 active:text-white active:bg-gray-800' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
+                <button className='shadow-cta flex mx-auto mt-5 items-center py-2 px-4 lg:px-5 select-none text-center max-w-max text-black text-base font-bold rounded-full bg-gray-800 text-white active:text-white active:bg-black' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
                     <div className='leading-0 mr-3'>View Upcoming</div>
                     <div className='w-3.5'>{NavSVG}</div>
                 </button>
@@ -37,12 +37,24 @@ const Purpose = () => {
             <div className='text-4xl font-extrabold mt-20 mb-10 lg:px-52 z-10 relative'>Together, we’re taking over a multi-billion dollar industry.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
-                <div className='text-xl font-extrabold'>The world's first in real utility using blockchain technology.</div>
+                    <div className='text-xl font-extrabold'>The world's first, in real utility using blockchain technology.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'><b>STAGELINK</b> is the latest pioneering utility token built to disrupt the exploitative PPV industry, and replace it with the stagelink ecosystem that rewards its holders via different avenues.</div>
                 </div>
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>Out with the old and in with the new.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>Our goal is to decentralise the sports entertainment industry by implementing the Pay-Per-View system and hosting professional & influencer boxing exhibition that can be enjoyed by fans from all over the world.</div>
+                </div>
+            </div>
+
+            <div className='flex flex-col text-sm text-normal rounded-lg bg-white bg-opacity-20 p-5 text-left mb-20'>
+            <div className='text-base font-extrabold'>OUR PURPOSE.</div>
+                <div className='flex flex-col md:flex-row md:space-x-20'> 
+                    <div className='flex-1 mt-8'>The old PPV can only be bought through fiat which will be made more redundant as crypto becomes more prominent, however StageLink offers the cryptocurrency option.</div>
+                    <div className='flex-1 mt-8'>PPV is bought for entertainment purposes, however some the fighte can be underwhelming and leave a sour taste when matches are quickly concluded, however buying from stagelink will provide other benefits so the customer is always left happy.</div>
+                </div>
+                <div className='flex flex-col md:flex-row md:space-x-20'> 
+                    <div className='flex-1 mt-8'>The current  PPV is over priced due the monopolisation of the industry, we will charge more fair prices so that the common working man afford to see fights as we understand many people aspire to be able to watch these fights live and in person.</div>
+                    <div className='flex-1 mt-8'>Combat sports fighters sometimes get underpaid/taken advantage of as they are not many places that host fights etc due to monopolisation and not all fighters are prominent. Corporations receive a large amount of profits while fighters do a large amount of the work work. StageLink rewards the common people and in this scenario the fighters are comparable to common people as we aim to pay them fairly and shine light on lesser known fighters so they can improve their careers.</div>
                 </div>
             </div>
         </div>

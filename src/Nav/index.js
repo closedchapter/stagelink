@@ -7,8 +7,9 @@ const Bar = () => {
     return (
         <div className='fixed bg-gray-800 text-white z-20 flex items-center h-16 px-5 w-full'>
             <div className='flex flex-1 items-center'>
-                <div className='text-white text-lg font-bold'>StageLink</div>
-                <img className="w-5 h-full filter invert" src={require("./images/boxing-gloves.png").default} alt="" />
+                <div className='text-white text-lg font-bold'>Stage</div>
+                <img className="w-5 h-full filter invert" src={require("./images/link.png").default} alt="" />
+                <div className='text-white text-lg font-bold'>Link</div>
             </div>
             <div>{NavSVG}</div>
         </div>

@@ -18,6 +18,11 @@ code {
 @tailwind utilities;
 
 .shadow-btn {
-  -webkit-box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.61); 
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.1618);
   box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.1618);
+}
+
+.shadow-cta {
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(31,41,55, 0.618);
+  box-shadow: 0px 0px 15px 5px rgba(31,41,55, 0.618);
 }
