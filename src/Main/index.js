@@ -21,6 +21,29 @@ const Landing = () => {
                     <div className='leading-0 mr-3'>Buy Now</div>
                     <div className='w-3.5'>{NavSVG}</div>
                 </a>
+                <button className='shadow-btn flex mx-auto mt-5 items-center py-2 px-4 lg:px-5 select-none text-center max-w-max text-black text-base font-bold rounded-full bg-white hover:bg-gray-400 active:text-white active:bg-gray-800' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
+                    <div className='leading-0 mr-3'>View Upcoming</div>
+                    <div className='w-3.5'>{NavSVG}</div>
+                </button>
+            </div>
+        </div>
+    )
+}
+
+const Purpose = () => {
+    return (
+        <div className='bg-black bg-opacity-95 text-white p-7 text-center relative overflow-hidden'>
+            
+            <div className='text-4xl font-extrabold mt-20 mb-10 lg:px-52 z-10 relative'>Together, we’re taking over a multi-billion dollar industry.</div>
+            <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
+                <div className='mt-12 flex-1'>
+                <div className='text-xl font-extrabold'>The world's first in real utility using blockchain technology.</div>
+                    <div className='text-base text-normal mt-5 leading-relaxed'><b>STAGELINK</b> is the latest pioneering utility token built to disrupt the exploitative PPV industry, and replace it with the stagelink ecosystem that rewards its holders via different avenues.</div>
+                </div>
+                <div className='mt-12 flex-1'>
+                    <div className='text-xl font-extrabold'>Out with the old and in with the new.</div>
+                    <div className='text-base text-normal mt-5 leading-relaxed'>Our goal is to decentralise the sports entertainment industry by implementing the Pay-Per-View system and hosting professional & influencer boxing exhibition that can be enjoyed by fans from all over the world.</div>
+                </div>
             </div>
         </div>
     )
@@ -85,6 +108,7 @@ const Main = () => {
     return (
         <div className='container mx-auto pt-16'>
             <Landing />
+            <Purpose />
             <Tokenomics />
             <Ecosystem />
         </div>
@@ -93,3 +117,10 @@ const Main = () => {
 
 export default Main
 // <img className='' src={require("./images/bgimg.jpg").default} alt=''/>
+
+/*
+<div className='absolute w-full h-full z-0 transform scale-75'>
+                <img className='absolute transform translate-y-48 h-full w-full filter grayscale object-cover' src={require("./images/hero.jpg").default} alt=''/>
+                <div className='absolute bg-gradient-to-b from-transparent to-black h-full w-full'></div>
+            </div>
+*/
