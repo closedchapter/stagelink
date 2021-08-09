@@ -1,18 +1,17 @@
-import React from 'react';
+import React from 'react'
 import { Switch, Route } from 'react-router-dom';
-import ComingSoon from './upcoming';
-import Landing from './landing';
-import Footer from './components/footer';
+import Main from './Main'
+import * as Nav from './Nav'
 
 function App() {
   return (
-  <>
-      <Switch>
-        <Route path='/' exact component={Landing} />
-        <Route path='/upcoming' exact component={ComingSoon} />
-      </Switch>
-    <Footer />
-  </>
+    <div>
+      <Nav.Bar />
+        <Switch>
+          <Route path='/' exact component={Main} />
+        </Switch>
+      <Nav.Footer />
+    </div>
   );
 }
 
