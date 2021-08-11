@@ -6,7 +6,7 @@ import * as Nav from './Nav'
 
 function App() {
   return (
-    <div>
+    <div className='bg-black'>
       <Nav.Bar />
         <Switch>
           <Route path='/' exact component={Main} />

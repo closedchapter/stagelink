@@ -8,6 +8,9 @@ const NavSVG = <svg class="w-full h-full" fill="none" stroke="currentColor" view
 const Landing = () => {
     return (
         <div className='flex flex-col lg:flow-row bg-black text-center text-white overflow-hidden h-screen relative'>
+            <div className='bg-white bg-opacity-20 fixed right-30 rounded-xl p-2 m-5 px-3 z-50'>
+                <div className='text-white text-xs font-medium'>Version: DONKEYBALLS</div>
+            </div>
             <div className='absolute w-full h-full z-0 transform scale-75'>
                 <img className='absolute transform translate-y-48 h-full w-full object-cover' src={require("./images/bgimg.jpg").default} alt=''/>
                 <div className='transform translate-y-52 absolute bg-gradient-to-b from-transparent via-transparent to-black h-full w-full'></div>
@@ -127,7 +130,7 @@ const HowTo = () => {
                     <div className='text-base text-normal mt-5 leading-relaxed'>Set up your <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://metamask.io/"} target="_blank" rel="nofollow noopener noreferrer">MetaMask currency wallet</a> and configure it to the Binance Smart Chain Network. If you're not sure on how to do this, <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.bsc.news/post/connecting-metamask-wallet-to-the-binance-smart-chain"} target="_blank" rel="nofollow noopener noreferrer">here's a handy guide.</a></div><div className='text-base text-normal mt-5 leading-relaxed'><b>You’ll need to purchase STAGELINK coins with BNB.</b> Make sure you have enough BNB coins. If not, you can buy BNB on cryptocurrency exchanges like <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.binance.com/"} target="_blank" rel="nofollow noopener noreferrer">Binance</a> or <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.coinbase.com/"} target="_blank" rel="nofollow noopener noreferrer">Coinbase</a> and then send it over to your MetaMask wallet. <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://crypto-explained.com/services/send-bnb-coin-to-binance-smart-chain-on-metamask/"} target="_blank" rel="nofollow noopener noreferrer">Here’s a guide on how you can do so quickly and safely</a>.</div>
                     <div className='flex flex-col min-h mt-10  text-black rounded-3xl p-4'>
                         <div className='text-base text-normal font-semibold leading-relaxed'>Contract address</div>
-                        <div className='flex flex-col break-words text-xl font-bold mt-1 bg-gray-400 p-1 px-2 rounded-xl'>0x2A9718defF471f3Bb91FA0ECEAB14154F150a385</div>
+                        <div className='flex flex-col break-words text-xl font-bold mt-1 bg-gray-400 p-1 px-2 rounded-xl select-all'>0x2A9718defF471f3Bb91FA0ECEAB14154F150a385</div>
                         <button className='flex text-base bg-blue-600 rounded-full p-2 px-4 text-white font-semibold w-max mt-5'>Copy Address</button>
                     </div>
                 </div>

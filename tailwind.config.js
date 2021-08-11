@@ -9,6 +9,7 @@ module.exports = {
       backgroundColor: ['hover', 'active'],
       textColor: ['hover', 'active'],
       textDecoration: ['hover', 'active'],
+      textOpacity: ['hover'],
     },
   },
   plugins: [],
