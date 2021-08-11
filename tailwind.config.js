@@ -7,7 +7,8 @@ module.exports = {
   variants: {
     extend: {
       backgroundColor: ['hover', 'active'],
-      textColor: ['active'],
+      textColor: ['hover', 'active'],
+      textDecoration: ['hover', 'active'],
     },
   },
   plugins: [],
