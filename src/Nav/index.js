@@ -9,17 +9,17 @@ const CloseSVG = <svg className="w-6 h-6" fill="none" stroke="currentColor" view
 function NavListItems() {
     const NavArray = [{name:"Section 1", link:""},{name:"Section 2", link:""},{name:"Section 3", link:""}];
   
-    return NavArray.map((item) => <button className='select-none appearance-none font-bold transition duration-150 ease-in-out opacity-30 hover:opacity-100' key={item}>{item.name}</button>);
+    return NavArray.map((item) => <button className='sport-btn select-none appearance-none font-bold transition duration-150 ease-in-out opacity-30 hover:opacity-100' key={item}>{item.name}</button>);
   }
 
 const Bar = () => {
     const [modal, setModal] = useState(false);
     const Modal = () => {
         return (
-            <div className='bg-black fixed inset-0 z-30 flex flex-col items-start h-full overflow-hidden'>
+            <div className='animate__animated animate__fadeIn animate__faster bg-black fixed inset-0 z-30 flex flex-col items-start h-full overflow-hidden'>
                 <div className='flex w-full'>
                     <div className='flex-1'>
-                        <Link to='/' className='p-5 flex w-max items-center'>
+                        <Link to='/' className='p-5 flex w-max items-center sport-btn'>
                             <div className='text-white text-lg font-bold'>Stage</div>
                             <img className="w-4 h-full filter invert" src={require("./images/link.png").default} alt="" />
                             <div className='text-white text-lg font-bold'>Link</div>
@@ -33,9 +33,9 @@ const Bar = () => {
     }
     return (
         <div>
-            <div className='select-none fixed bg-gray-800 text-white z-30 bg-opacity-95 flex items-center h-16 px-5 w-full'>
+            <div className='select-none fixed bg-gray-900 text-white z-30 flex items-center h-16 px-5 w-full'>
                 <div className='flex flex-1 items-center'>
-                    <Link to='/' className='flex items-center'>
+                    <Link to='/' className='flex items-center sport-btn'>
                         <div className='text-white text-lg font-bold'>Stage</div>
                         <img className="w-4 h-full filter invert" src={require("./images/link.png").default} alt="" />
                         <div className='text-white text-lg font-bold'>Link</div>
@@ -51,7 +51,6 @@ const Bar = () => {
                 </button>
                 <div className='hidden lg:flex pr-12 space-x-10 text-lg'><NavListItems/></div>
             </div>
-            <div className='fixed bg-gray-800 h-16 z-20 w-full flex filter blur-lg opacity-80'></div>
             {
                 !modal ?
                 null
@@ -66,7 +65,7 @@ const Footer = () => {
     return (
         <div className='bg-black text-white'>
             <div className='container mx-auto p-12 flex flex-col'>
-                <div className='flex h-7 space-x-10 mt-36'>
+                <div className='flex h-7 space-x-10 mt-5'>
                     <a className='h-full filter invert' href={"https://t.me/StageLink"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/telegram.png").default} alt="" />
                     </a>
@@ -77,7 +76,7 @@ const Footer = () => {
                         <img className="h-full" src={require("./images/instagram.png").default} alt="" />
                     </a>
                 </div>
-                <div className='font-bold text-sm mt-10'>© 2021 STAGELINK. All Rights Reserved.</div>
+                <div className='font-bold text-sm mt-10 sport-btn'>© 2021 STAGELINK. All Rights Reserved.</div>
             </div>
         </div>
     )

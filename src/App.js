@@ -1,5 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom';
+import 'animate.css'
+
 import Main from './Main'
 import Live from './Live'
 import * as Nav from './Nav'
