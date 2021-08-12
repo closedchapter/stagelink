@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// eslint-disable-next-line no-unused-vars
 import data from './data.json'
 
 const NavSVG = <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path></svg>
@@ -8,8 +7,8 @@ const NavSVG = <svg class="w-full h-full" fill="none" stroke="currentColor" view
 const Landing = () => {
     return (
         <div className='flex flex-col lg:flow-row bg-black text-center text-white overflow-hidden h-screen relative'>
-            <div className='bg-white bg-opacity-20 fixed right-30 rounded-xl p-2 m-5 px-3 z-50'>
-                <div className='text-white text-xs font-medium'>Version: DONKEYBALLS</div>
+            <div className='bg-white bg-opacity-20 fixed left-28 rounded-xl p-2 m-5 px-3 z-50'>
+                <div className='text-white text-xs font-medium'>Version: TINYKNOB</div>
             </div>
             <div className='absolute w-full h-full z-0 transform scale-75'>
                 <img className='absolute transform translate-y-48 h-full w-full object-cover' src={require("./images/bgimg.jpg").default} alt=''/>
@@ -67,13 +66,13 @@ const Purpose = () => {
 
 const Ecosystem = () => {
     return (
-        <div className='bg-white text-black p-7'>
+        <div className='bg-black bg-opacity-10 text-black p-7'>
             <div className='text-4xl font-extrabold mt-16'>Our ecosystem and benefits.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>Joining us rewards you.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>All holders of our utility token are rewarded generously because we understand how important your support is. Becoming a holder means you lose nothing and gain everything.</div>
-                    <div className='text-base text-normal mt-5 bg-gray-300 text-gray-800 rounded p-4 space-y-5'>
+                    <div className='text-base text-normal mt-5 bg-gray-900 text-gray-100 rounded p-4 space-y-5'>
                         <div className='flex flex-col mb-2'><b className='text-2xl'>10%</b><div>towards <b>holders</b> from merch profit.</div></div>
                         <div className='flex flex-col mb-2'><b className='text-2xl'>10%</b><div>reinvested into token from merch profit.</div></div>
                         <div className='flex flex-col mb-2'><b className='text-2xl'>5%</b><div>towards <b>holders</b> from event profit.</div></div>
@@ -91,7 +90,7 @@ const Ecosystem = () => {
 
 const Tokenomics = () => {
     return (
-        <div className='bg-gray-900 text-white p-7'>
+        <div className='bg-black bg-opacity-95 text-white p-7'>
             <div className='text-4xl font-extrabold mt-16'>Our Tokenomics.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
@@ -130,8 +129,8 @@ const HowTo = () => {
                     <div className='text-base text-normal mt-5 leading-relaxed'>Set up your <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://metamask.io/"} target="_blank" rel="nofollow noopener noreferrer">MetaMask currency wallet</a> and configure it to the Binance Smart Chain Network. If you're not sure on how to do this, <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.bsc.news/post/connecting-metamask-wallet-to-the-binance-smart-chain"} target="_blank" rel="nofollow noopener noreferrer">here's a handy guide.</a></div><div className='text-base text-normal mt-5 leading-relaxed'><b>You’ll need to purchase STAGELINK coins with BNB.</b> Make sure you have enough BNB coins. If not, you can buy BNB on cryptocurrency exchanges like <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.binance.com/"} target="_blank" rel="nofollow noopener noreferrer">Binance</a> or <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.coinbase.com/"} target="_blank" rel="nofollow noopener noreferrer">Coinbase</a> and then send it over to your MetaMask wallet. <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://crypto-explained.com/services/send-bnb-coin-to-binance-smart-chain-on-metamask/"} target="_blank" rel="nofollow noopener noreferrer">Here’s a guide on how you can do so quickly and safely</a>.</div>
                     <div className='flex flex-col min-h mt-10  text-black rounded-3xl p-4'>
                         <div className='text-base text-normal font-semibold leading-relaxed'>Contract address</div>
-                        <div className='flex flex-col break-words text-xl font-bold mt-1 bg-gray-400 p-1 px-2 rounded-xl select-all'>0x2A9718defF471f3Bb91FA0ECEAB14154F150a385</div>
-                        <button className='flex text-base bg-blue-600 rounded-full p-2 px-4 text-white font-semibold w-max mt-5'>Copy Address</button>
+                        <div className='flex flex-col break-all text-xl font-bold mt-1 bg-gray-400 p-1 px-2 rounded-xl select-all'>0x2A9718defF471f3Bb91FA0ECEAB14154F150a385</div>
+                        <button onClick={(e) => {navigator.clipboard.writeText(e.target.id)}} id="0x2A9718defF471f3Bb91FA0ECEAB14154F150a385" className='flex text-base bg-blue-600 rounded-full p-2 px-4 text-white font-semibold w-max mt-5'>Copy Address</button>
                     </div>
                 </div>
                 <div className='mt-12 flex-1'>
@@ -144,14 +143,39 @@ const HowTo = () => {
     )
 }
 
+function ContentListItems(info) {
+    console.log(info)
+    let content = info.info
+    console.log(content)
+    return content.map((content) => <li className='mt-5 text-base font-normal ml-5'>{content.objective}</li>)
+  }
+
+function SectionListItems() {
+    return data.map((section) => <div className='p-5 rounded-xl bg-black bg-opacity-50 flex flex-col' key={section}><div className='text-lg font-bold'>{section.name}</div><div className=''><ContentListItems info={section.section}/></div></div>);
+  }
+
+const Roadmap = () => {
+    return (
+        <div className='bg-gray-900 text-white p-7'>
+            <div className='text-4xl font-extrabold mt-16'>Our roadmap.</div>
+            <div className='grid grid-flow-row grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 mt-16 mb-10'>
+                <SectionListItems/>
+            </div>
+        </div>
+    )
+}
+
 const Main = () => {
     return (
-        <div className='container mx-auto pt-16'>
-            <Landing />
-            <Purpose />
-            <Tokenomics />
-            <Ecosystem />
-            <HowTo />
+        <div className=''>
+            <div className='bg-black'><Landing /></div>
+            <div className='container mx-auto'>
+                <Purpose />
+                <Tokenomics />
+                <Ecosystem />
+                <HowTo />
+                <Roadmap />
+            </div>
         </div>
     )
 }

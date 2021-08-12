@@ -1,3 +1,114 @@
-{
-    
-}
+[
+    {
+        "name":"Stage 1",
+        "section":[
+            {
+                "objective":"CEO Dox",
+                "done?":false
+            },
+            {
+                "objective":"Presale held on DX-Sale",
+                "done?":false
+            },
+            {
+                "objective":"PancakeSwape Launch",
+                "done?":false
+            },
+            {
+                "objective":"Marketing begins",
+                "done?":false
+            },
+            {
+                "objective":"Inital loyalty reward offering",
+                "done?":false
+            },
+            {
+                "objective":"CoinGecko (fast-tracked)",
+                "done?":false
+            },
+            {
+                "objective":"CoinmarketCap (fast-tracked)",
+                "done?":false
+            },
+            {
+                "objective":"Audit",
+                "done?":false
+            }
+        ]
+    },
+    {
+        "name":"Stage 2",
+        "section":[
+            {
+                "objective":"Website/Whitepaper redesign & frequent updates",
+                "done?":false
+            },
+            {
+                "objective":"Merch store setup",
+                "done?":false
+            },
+            {
+                "objective":"Team expansion",
+                "done?":false
+            },
+            {
+                "objective":"VIP Group for top 50 holders",
+                "done?":false
+            },
+            {
+                "objective":"Large-scale marketing campaign",
+                "done?":false
+            },
+            {
+                "objective":"Influencer collaborations",
+                "done?":false
+            }
+        ]
+    },
+    {
+        "name":"Stage 3",
+        "section":[
+            {
+                "objective":"Transistion to corporate status",
+                "done?":false
+            },
+            {
+                "objective":"Acquisition of operational licensing",
+                "done?":false
+            },
+            {
+                "objective":"Partnerships within industry",
+                "done?":false
+            },
+            {
+                "objective":"Expansion into NFT Marketplace",
+                "done?":false
+            },
+            {
+                "objective":"Development of app",
+                "done?":false
+            }
+        ]
+    },
+    {
+        "name":"Stage 4",
+        "section":[
+            {
+                "objective":"Integration into mainstream sports media",
+                "done?":false
+            },
+            {
+                "objective":"Introduction of betting on app",
+                "done?":false
+            },
+            {
+                "objective":"Exclusive NFT events",
+                "done?":false
+            },
+            {
+                "objective":"Inital host of STAGELINK event",
+                "done?":false
+            }
+        ]
+    }
+]
