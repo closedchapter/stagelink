@@ -6,29 +6,26 @@ const NavSVG = <svg class="w-full h-full" fill="none" stroke="currentColor" view
 
 const Landing = () => {
     return (
-        <div className='animate__animated animate__fadeIn flex flex-col lg:flow-row bg-black text-center text-white overflow-hidden h-screen relative'>
-            <div className='bg-white bg-opacity-20 fixed left-28 rounded-xl p-2 m-5 px-3 z-50'>
-                <div className='text-white text-xs font-medium'>Version: GAYNINJA</div>
+        <div className='animate__animated animate__fadeIn h-screen bg-black grid grid-rows-4 justify-items-center text-white text-center relative'>
+            <div className='flex relative z-20'>
             </div>
-            <div className='absolute w-full h-full z-0 transform'>
-                <img className='absolute transform translate-y-48 h-full w-full object-cover scale-90' src={require("./images/bgimg.jpg").default} alt=''/>
-                <div className='transform translate-y-52 absolute bg-gradient-to-b from-transparent via-transparent to-black h-full w-full'></div>
+            <div className='flex relative z-20 px-8'>
+                <div className='sport-btn text-5xl md:text-7xl font-black mb-auto bg-black bg-opacity-40 rounded-lg p-5'>Setting the <div className='inline-block text-red-500'>stage</div> for the revolution of <div className='inline-block text-red-500'>sports.</div></div>
             </div>
-            <div className='flex flex-col p-5 flex-1 relative z-10 h-full justify-start container mx-auto'>
-                <div className='flex flex-col md:mt-16 lg:px-36'>
-                    <img className="w-6 h-6 filter invert mx-auto opacity-40 mt-5 hidden" src={require("./images/boxing-gloves.png").default} alt="" /> 
-                    <div className='sport-btn text-5xl md:text-7xl font-black mt-24 md:mt-16'>Setting the <div className='inline-block text-red-700'>stage</div> for the revolution of <div className='inline-block text-red-700'>sports.</div></div>
-                    <div className='text-lg lg:text-base font-medium opacity-70 mt-21 hidden'>With the recent surge of pro/influencer pay-per-view exhibitions, entertaining millions of fans worldwide, Generating billions of revenue per year, we aim to utilise on this and be the first ever token to incorporate cryptocurrency into the ppv/sports industry by hosting our own exhibitions in which holders will be payed a percentage of revenue generated.</div>
+            <div className='flex relative z-20'>
+                <div className='mb-auto'>
+                    <a className='sport-btn flex justify-center align-center items-center py-3 px-6 select-none text-black text-lg font-semibold rounded-sm bg-white hover:bg-gray-400 active:text-white active:bg-gray-800' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
+                        <div className='mr-7'>Buy Now</div>
+                        <div className='w-4'>{NavSVG}</div>
+                    </a>
+                    <Link to='/live' className='sport-btn flex mt-5 justify-center align-center items-center py-3 px-6 select-none text-white text-lg font-semibold rounded-sm ring-2 ring-white hover:bg-gray-400 active:text-white active:bg-gray-800'>
+                        <div className='mr-7'>View Upcoming</div>
+                        <div className='w-4'>{NavSVG}</div>
+                    </Link>
                 </div>
-                <a className='sport-btn flex mx-auto mt-64 justify-center align-center items-center py-3 px-6 select-none text-black text-lg font-semibold rounded-sm bg-white hover:bg-gray-400 active:text-white active:bg-gray-800' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
-                    <div className='mr-7'>Buy Now</div>
-                    <div className='w-4'>{NavSVG}</div>
-                </a>
-                <Link to='/live' className='sport-btn flex mx-auto mt-5 justify-center align-center items-center py-3 px-6 select-none text-white text-lg font-semibold rounded-sm ring-2 ring-white hover:bg-gray-400 active:text-white active:bg-gray-800'>
-                    <div className='mr-7'>View Upcoming</div>
-                    <div className='w-4'>{NavSVG}</div>
-                </Link>
             </div>
+            <img className='absolute h-full w-full object-cover z-0' src={require("./images/bgimg.jpg").default} alt=''/>
+            <div className='absolute h-full w-full object-cover bg-gradient-to-b from-transparent to-black'/>
         </div>
     )
 }
@@ -40,11 +37,11 @@ const Purpose = () => {
             <div className='text-4xl font-extrabold mt-20 mb-10 lg:px-52 z-10 relative'>Together, we’re taking over a multi-billion dollar industry.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
-                    <div className='text-xl font-extrabold'>The world's first token, with real-life utility, using blockchain technology.</div>
+                    <div className='text-xl font-extrabold'>The world's first sport token, with real-life utility, using blockchain technology.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'><b>STAGELINK</b> is the latest pioneering utility token built to disrupt the exploitative PPV industry, and replace it with the stagelink ecosystem that rewards its holders via different avenues.</div>
                 </div>
                 <div className='mt-12 flex-1'>
-                    <div className='text-xl font-extrabold'>Our Purpose.</div>
+                    <div className='text-xl font-extrabold'>Purpose.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>Our goal is to decentralise the sports entertainment industry by implementing the Pay-Per-View system and hosting professional & influencer boxing exhibition that can be enjoyed by fans from all over the world.</div>
                 </div>
             </div>
@@ -67,7 +64,7 @@ const Purpose = () => {
 const Ecosystem = () => {
     return (
         <div className='bg-gradient-to-b from-black via-black to-gray-900 text-white p-7'>
-            <div className='text-4xl font-extrabold mt-16'>Our ecosystem and benefits.</div>
+            <div className='text-4xl font-extrabold mt-16'>Ecosystem and Benefits.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>Joining us rewards you.</div>
@@ -91,7 +88,7 @@ const Ecosystem = () => {
 const Tokenomics = () => {
     return (
         <div className='bg-black bg-opacity-95 text-white p-7'>
-            <div className='text-4xl font-extrabold mt-16'>Our Tokenomics.</div>
+            <div className='text-4xl font-extrabold mt-16'>Tokenomics.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>Wallet Distribution</div>
@@ -157,7 +154,7 @@ function SectionListItems() {
 const Roadmap = () => {
     return (
         <div className='bg-gray-900 text-white p-7'>
-            <div className='text-4xl font-extrabold mt-16'>Our roadmap.</div>
+            <div className='text-4xl font-extrabold mt-16'>Roadmap.</div>
             <div className='grid grid-flow-row grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 mt-16 mb-10'>
                 <SectionListItems/>
             </div>
@@ -167,7 +164,7 @@ const Roadmap = () => {
 
 const Main = () => {
     return (
-        <div className=''>
+        <div className='pt-16'>
             <div className='bg-black'><Landing /></div>
             <div className='container mx-auto'>
                 <Purpose />
@@ -182,4 +179,33 @@ const Main = () => {
 
 export default Main
 
-// <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.bsc.news/post/connecting-metamask-wallet-to-the-binance-smart-chain"} target="_blank" rel="nofollow noopener noreferrer">Here's a handy guide</a>
+/*
+const Landing = () => {
+    return (
+        <div className='animate__animated animate__fadeIn flex flex-col lg:flow-row bg-black text-center text-white overflow-hidden h-screen relative'>
+            <div className='bg-white bg-opacity-20 fixed left-28 rounded-xl p-2 m-5 px-3 z-50'>
+                <div className='text-white text-xs font-medium'>Version: GAYNINJA</div>
+            </div>
+            <div className='absolute w-full h-full z-0 transform'>
+                <img className='absolute transform translate-y-16 h-full w-full object-cover scale-75' src={require("./images/bgimg.jpg").default} alt=''/>
+                <div className='transform translate-y-52 absolute bg-gradient-to-b from-transparent via-black to-black h-full w-full'></div>
+            </div>
+            <div className='flex flex-col p-5 flex-1 relative z-10 h-full justify-start container mx-auto'>
+                <div className='flex flex-col md:mt-16 lg:px-36'>
+                    <img className="w-6 h-6 filter invert mx-auto opacity-40 mt-5 hidden" src={require("./images/boxing-gloves.png").default} alt="" /> 
+                    <div className='sport-btn text-5xl md:text-7xl font-black mt-16 md:mt-16'>Setting the <div className='inline-block text-red-700'>stage</div> for the revolution of <div className='inline-block text-red-700'>sports.</div></div>
+                    <div className='text-lg lg:text-base font-medium opacity-70 mt-21 hidden'>With the recent surge of pro/influencer pay-per-view exhibitions, entertaining millions of fans worldwide, Generating billions of revenue per year, we aim to utilise on this and be the first ever token to incorporate cryptocurrency into the ppv/sports industry by hosting our own exhibitions in which holders will be payed a percentage of revenue generated.</div>
+                </div>
+                <a className='sport-btn flex mx-auto mt-32 justify-center align-center items-center py-3 px-6 select-none text-black text-lg font-semibold rounded-sm bg-white hover:bg-gray-400 active:text-white active:bg-gray-800' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
+                    <div className='mr-7'>Buy Now</div>
+                    <div className='w-4'>{NavSVG}</div>
+                </a>
+                <Link to='/live' className='sport-btn flex mx-auto mt-5 justify-center align-center items-center py-3 px-6 select-none text-white text-lg font-semibold rounded-sm ring-2 ring-white hover:bg-gray-400 active:text-white active:bg-gray-800'>
+                    <div className='mr-7'>View Upcoming</div>
+                    <div className='w-4'>{NavSVG}</div>
+                </Link>
+            </div>
+        </div>
+    )
+}
+*/
