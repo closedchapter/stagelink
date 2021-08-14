@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom'
 import Pop from './PopUp'
 import data from './data.json'
 
-
 const NavSVG = <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 3l7 7-7 7"></path></svg>
 const Landing = () => {
     return (
-        <div id="home" className='animate__animated animate__fadeIn h-screen bg-black grid grid-rows-2 justify-items-center text-white text-center relative'>
+        <div id="home" className='filter brightness-125 contrast-125 animate__animated animate__fadeIn h-screen bg-black grid grid-rows-2 justify-items-center text-white text-center relative overflow-hidden'>
             <div className='flex relative z-20 p-5'>
                 <div className='my-auto sport-btn text-4xl md:text-5xl lg:text-7xl font-black bg-black bg-opacity-40 rounded-lg p-2'>Setting the <div className='inline-block text-red-500'>stage</div> for the revolution of <div className='inline-block text-red-500'>sports.</div></div>
             </div>
@@ -23,16 +22,27 @@ const Landing = () => {
                     </Link>
                 </div>
             </div>
-            <img className='absolute h-full w-full object-cover z-0' src={require("./images/bgimg.jpg").default} alt=''/>
+            <div className='absolute h-full w-full object-cover bkg-y'>
+                <img className='absolute h-full w-full object-cover z-0 bkg' src={require("./images/bgimg.jpg").default} alt=''/>
+            </div>
             <div className='absolute h-full w-full object-cover bg-gradient-to-b from-transparent to-black'/>
         </div>
     )
 }
 
+
+// <div className='text-4xl flex font-extrabold mt-20 mb-10 z-10 relative  overflow-hidden py-20 -m-7 relative my-auto container mx-auto md:px-52 '>Together, we’re taking over a multi-billion dollar industry.</div>
+
 const Purpose = () => {
     return (
         <div id="purpose" className='bg-black text-white p-7 text-center relative overflow-hidden'>
-            <div className='text-4xl font-extrabold mt-20 mb-10 lg:px-52 z-10 relative'>Together, we’re taking over a multi-billion dollar industry.</div>
+
+            <div className='relative h-max -m-7 my-16 py-16 flex items-center overflow-hidden'>
+                <div className='bg-black bg-opacity-30 rounded-xl z-10 text-4xl font-extrabold container mx-auto md:px-52 p-5'>Together, we’re taking over a <div className='text-red-600 inline-block'>multi-billion</div> dollar industry.</div>
+                <img className='absolute z-0 w-full h-full object-cover origin-top transform scale-150' src={require("./images/imagery.jpg").default} alt=''/>
+                <div className='absolute z-0 w-full h-full  bg-gradient-to-b from-transparent to-black'></div>
+            </div>
+
             <div className='flex flex-col mb-20 container mx-auto md:w-1/2'>
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>The world's first sport token, with real-life utility, using blockchain technology.</div>
@@ -45,14 +55,14 @@ const Purpose = () => {
             </div>
 
             <div className='flex flex-col text-sm text-normal rounded-2xl bg-white bg-opacity-10 p-10 text-left mb-20'>
-            <div className='text-base font-extrabold'>Out with the <div className='inline-block text-red-500'>old</div> and in with the <div className='inline-block text-blue-500'>new.</div></div>
+            <div className='text-lg font-extrabold text-center md:text-left'>Out with the <div className='inline-block text-blue-500'>OLD</div> and in with the <div className='inline-block text-blue-500'>NEW.</div></div>
                 <div className='flex flex-col md:flex-row md:space-x-20'> 
-                    <div className='flex-1 mt-8'>The old Pay-Per-View can only be bought through fiat which will be made more redundant as crypto becomes more prominent, however StageLink offers the cryptocurrency option.</div>
-                    <div className='flex-1 mt-8'>Pay-Per-View is bought for entertainment purposes, however, often the fights can be underwhelming and leave a sour taste when matches are quickly concluded. Buying from StageLink will provide other benefits so the customer is always left happy.</div>
+                    <div className='flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>The old Pay-Per-View can only be bought through fiat which will be made more redundant as crypto becomes more prominent, however StageLink offers the cryptocurrency option.</div>
+                    <div className='flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>Pay-Per-View is bought for entertainment purposes, however, often the fights can be underwhelming and leave a sour taste when matches are quickly concluded. Buying from StageLink will provide other benefits so the customer is always left happy.</div>
                 </div>
                 <div className='flex flex-col md:flex-row md:space-x-20'> 
-                    <div className='flex-1 mt-8'>The current Pay-Per-View is over-priced due the monopolisation of the industry, we will charge fairer prices so that the common working man can afford to see these fights as we understand many people aspire to be able to watch these fights live and in person at least once in their life.</div>
-                    <div className='flex-1 mt-8'>Combat sports fighters often get taken advantage of due to the aforementioned monopolisation, lesser known fighters cannot advocate for themselves to receive a fair pay. StageLink wishes to see equal pay and opportunities in this industry.</div>
+                    <div className='flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>The current Pay-Per-View is over-priced due the monopolisation of the industry, we will charge fairer prices so that the common working man can afford to see these fights as we understand many people aspire to be able to watch these fights live and in person at least once in their life.</div>
+                    <div className='flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>Combat sports fighters often get taken advantage of due to the aforementioned monopolisation, lesser known fighters cannot advocate for themselves to receive a fair pay. StageLink wishes to see equal pay and opportunities in this industry.</div>
                 </div>
             </div>
         </div>
@@ -61,8 +71,9 @@ const Purpose = () => {
 
 const Ecosystem = () => {
     return (
-        <div id="ecosystem-and-benefits" className='bg-gradient-to-b from-black via-black to-gray-900 text-white p-7'>
-            <div className='text-4xl font-extrabold mt-16'>Ecosystem and Benefits.</div>
+        <div id="ecosystem-and-benefits" className='bg-black text-white p-7'>
+        
+            <div className='text-4xl font-extrabold mt-4'>Ecosystem and Benefits.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>Joining us rewards you.</div>
@@ -88,7 +99,7 @@ const Tokenomics = () => {
         <div id="tokenomics" className='bg-black bg-opacity-95 text-white p-7'>
             <div className='text-4xl font-extrabold mt-16'>Tokenomics.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
-                <div className='mt-12 flex-1'>
+                <div className='mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
                     <div className='text-xl font-extrabold'>Wallet Distribution</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'></div>
                     <div className='text-base text-normal ml-5 mt-5'>
@@ -100,7 +111,7 @@ const Tokenomics = () => {
                         <li><b>10%</b> distributed to <b>marketing wallet</b>.</li>
                     </div>
                 </div>
-                <div className='mt-12 flex-1'>
+                <div className='mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
                     <div className='text-xl font-extrabold'>Transaction Fee (12%)</div>
                     <div className='text-base text-normal ml-5 mt-5'>
                     <li><b>3%</b> rewarded to <b>holders</b>.</li>
@@ -139,22 +150,32 @@ function copyToClipboard(textToCopy) {
         });
     }
 }
-
+    const [disabled, disableButton] = useState(false);
     const [animation, setAnimation] = useState('hidden');
-    
-    const triggerAnimation = () => {
-        setAnimation('animate__animated animate__zoomInUp')
-        let timer1 = setTimeout(() => setAnimation('animate__animated animate__bounceOutDown'), 3000)
-        return timer1
-    }
 
     const handleClick = (event) => {
         copyToClipboard(event);
-        triggerAnimation()
+        if (disabled === false) {
+            disableButton(true)
+            triggerAnimation()
+        }
      }
+
+
+
+    const triggerAnimation = () => {
+        setAnimation('animate__animated animate__fadeInUp animate__fast')
+        const ExitRules = () => {
+            setAnimation('animate__animated animate__bounceOutDown animate_slow')
+            disableButton(false)
+        }
+        let timer1 = setTimeout(() => ExitRules(), 2000)
+        return timer1
+    }
 
     return (
         <div id="how-to-buy" className='bg-gray-900 text-gray-200 p-7'>
+            <div className={animation + ' fixed inset-x-0 container mx-auto px-10 md:px-32 bottom-16 z-50'}><Pop/></div>
             <div className='text-4xl font-extrabold mt-16'>How to buy STAGELINK now.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
@@ -164,7 +185,6 @@ function copyToClipboard(textToCopy) {
                         <code className='text-base text-normal text-opacity-40 font-semibold leading-relaxed text-gray-200'>Contract address</code>
                         <code className='flex flex-col break-all text-xl font-bold mt-3 text-white rounded-xl select-all'>0x2A9718defF471f3Bb91FA0ECEAB14154F150a385</code>
                         <code onClick={(e) => handleClick(e.target.id)} id="0x2A9718defF471f3Bb91FA0ECEAB14154F150a385" className='mt-5 cursor-pointer flex text-base bg-white bg-opacity-60 hover:bg-opacity-100 active:bg-green-500 rounded-lg p-2 px-4 text-black font-semibold w-max mt-5 '>Copy Address</code>
-                        <div className={animation + ' fixed inset-0'}><Pop/></div>
                     </div>
                 </div>
                 <div className='mt-12 flex-1'>
@@ -208,6 +228,7 @@ const Roadmap = () => {
 const Main = () => {
     return (
         <div className='pt-16'>
+            
             <div className='bg-black'><Landing /></div>
             <div className='container mx-auto'>
                 <Purpose/>

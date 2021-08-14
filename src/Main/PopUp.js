@@ -7,7 +7,7 @@ const PopSVG = <svg className="w-full h-full" fill="green" stroke="currentColor"
 const Pop = () => {
 
     return  (
-        <div id="popup" className={"text-white fixed shadow-lg flex text-left items-center bottom-10 transform -translate-x-1/2 inset-x-1/2 w-2/3 py-3 px-3 rounded bg-gray-900 ring-2 ring-white z-50"}>
+        <div id="popup" className={"text-white shadow-lg flex text-left items-center w-full py-3 px-3 rounded bg-gray-900 ring-2 ring-white z-50"}>
             <div className='mr-2'><div className='w-8'>{PopSVG}</div></div>
             <div className='text-sm font-medium'>Contract successfully copied!</div>
         </div>
