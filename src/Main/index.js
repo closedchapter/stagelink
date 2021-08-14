@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import Pop from './PopUp'
 import data from './data.json'
 
 
@@ -11,7 +12,7 @@ const Landing = () => {
                 <div className='my-auto sport-btn text-4xl md:text-5xl lg:text-7xl font-black bg-black bg-opacity-40 rounded-lg p-2'>Setting the <div className='inline-block text-red-500'>stage</div> for the revolution of <div className='inline-block text-red-500'>sports.</div></div>
             </div>
             <div className='flex relative z-20'>
-                <div className='mb-auto'>
+                <div className='mb-auto bg-black bg-opacity-40 rounded-xl p-5'>
                     <a className='sport-btn flex justify-center align-center items-center py-3 px-6 select-none text-black text-lg font-semibold rounded-sm bg-white hover:bg-gray-400 active:text-white active:bg-gray-800' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
                         <div className='mr-7'>Buy Now</div>
                         <div className='w-4'>{NavSVG}</div>
@@ -32,19 +33,19 @@ const Purpose = () => {
     return (
         <div id="purpose" className='bg-black text-white p-7 text-center relative overflow-hidden'>
             <div className='text-4xl font-extrabold mt-20 mb-10 lg:px-52 z-10 relative'>Together, we’re taking over a multi-billion dollar industry.</div>
-            <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
+            <div className='flex flex-col mb-20 container mx-auto md:w-1/2'>
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>The world's first sport token, with real-life utility, using blockchain technology.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'><b>STAGELINK</b> is the latest pioneering utility token built to disrupt the exploitative PPV industry, and replace it with the stagelink ecosystem that rewards its holders via different avenues.</div>
                 </div>
                 <div className='mt-12 flex-1'>
-                    <div className='text-xl font-extrabold'>Purpose.</div>
+                    <div className='text-xl font-extrabold'>...</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>Our goal is to decentralise the sports entertainment industry by implementing the Pay-Per-View system and hosting professional & influencer boxing exhibition that can be enjoyed by fans from all over the world.</div>
                 </div>
             </div>
 
             <div className='flex flex-col text-sm text-normal rounded-2xl bg-white bg-opacity-10 p-10 text-left mb-20'>
-            <div className='text-base font-extrabold'>Out with the old and in with the new.</div>
+            <div className='text-base font-extrabold'>Out with the <div className='inline-block text-red-500'>old</div> and in with the <div className='inline-block text-blue-500'>new.</div></div>
                 <div className='flex flex-col md:flex-row md:space-x-20'> 
                     <div className='flex-1 mt-8'>The old Pay-Per-View can only be bought through fiat which will be made more redundant as crypto becomes more prominent, however StageLink offers the cryptocurrency option.</div>
                     <div className='flex-1 mt-8'>Pay-Per-View is bought for entertainment purposes, however, often the fights can be underwhelming and leave a sour taste when matches are quickly concluded. Buying from StageLink will provide other benefits so the customer is always left happy.</div>
@@ -114,17 +115,45 @@ const Tokenomics = () => {
 }
 
 const HowTo = () => {
+    // return a promise
+function copyToClipboard(textToCopy) {
+    // navigator clipboard api needs a secure context (https)
+    if (navigator.clipboard && window.isSecureContext) {
+        // navigator clipboard api method'
+        return navigator.clipboard.writeText(textToCopy);
+    } else {
+        // text area method
+        let textArea = document.createElement("textarea");
+        textArea.value = textToCopy;
+        // make the textarea out of viewport
+        textArea.style.position = "fixed";
+        textArea.style.left = "-999999px";
+        textArea.style.top = "-999999px";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        return new Promise((res, rej) => {
+            // here the magic happens
+            document.execCommand('copy') ? res() : rej();
+            textArea.remove();
+        });
+    }
+}
+
+    const [animation, setAnimation] = useState('hidden');
+
     return (
         <div id="how-to-buy" className='bg-gray-900 text-gray-200 p-7'>
             <div className='text-4xl font-extrabold mt-16'>How to buy STAGELINK now.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>Setup your digital wallet.</div>
-                    <div className='text-base text-normal mt-5 leading-relaxed'>Set up your <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://metamask.io/"} target="_blank" rel="nofollow noopener noreferrer">MetaMask currency wallet</a> and configure it to the Binance Smart Chain Network. If you're not sure on how to do this, <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.bsc.news/post/connecting-metamask-wallet-to-the-binance-smart-chain"} target="_blank" rel="nofollow noopener noreferrer">here's a handy guide.</a></div><div className='text-base text-normal mt-5 leading-relaxed'><b>You’ll need to purchase STAGELINK coins with BNB.</b> Make sure you have enough BNB coins. If not, you can buy BNB on cryptocurrency exchanges like <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.binance.com/"} target="_blank" rel="nofollow noopener noreferrer">Binance</a> or <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.coinbase.com/"} target="_blank" rel="nofollow noopener noreferrer">Coinbase</a> and then send it over to your MetaMask wallet. <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://crypto-explained.com/services/send-bnb-coin-to-binance-smart-chain-on-metamask/"} target="_blank" rel="nofollow noopener noreferrer">Here’s a guide on how you can do so quickly and safely</a>.</div>
-                    <div className='flex flex-col min-h mt-10  text-black rounded-3xl'>
-                        <div className='text-base text-normal font-semibold leading-relaxed text-gray-200'>Contract address</div>
-                        <div className='flex flex-col break-all text-xl font-bold mt-1 bg-gray-400 p-1 px-2 rounded-xl select-all'>0x2A9718defF471f3Bb91FA0ECEAB14154F150a385</div>
-                        <button onClick={(e) => {navigator.clipboard.writeText(e.target.id)}} id="0x2A9718defF471f3Bb91FA0ECEAB14154F150a385" className='flex text-base bg-blue-600 rounded-full p-2 px-4 text-white font-semibold w-max mt-5'>Copy Address</button>
+                    <div className='text-base text-normal mt-5 leading-relaxed'>Set up your <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://metamask.io/"} target="_blank" rel="nofollow noopener noreferrer">MetaMask currency wallet</a> and configure it to the Binance Smart Chain Network. If you're not sure on how to do this, <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.bsc.news/post/connecting-metamask-wallet-to-the-binance-smart-chain"} target="_blank" rel="nofollow noopener noreferrer">here's a handy guide.</a></div><div className='text-base text-normal mt-5 leading-relaxed'><b>You’ll need to purchase STAGELINK coins with BNB (Smart Chain).</b> Make sure you have enough BNB coins. If not, you can buy BNB on cryptocurrency exchanges like <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.binance.com/"} target="_blank" rel="nofollow noopener noreferrer">Binance</a> and then send it over to your MetaMask wallet. <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://crypto-explained.com/services/send-bnb-coin-to-binance-smart-chain-on-metamask/"} target="_blank" rel="nofollow noopener noreferrer">Here’s a guide on how you can do so quickly and safely</a>.</div>
+                    <div className='flex flex-col min-h mt-10  text-black rounded-3xl bg-black bg-opacity-20 p-5'>
+                        <code className='text-base text-normal text-opacity-40 font-semibold leading-relaxed text-gray-200'>Contract address</code>
+                        <code className='flex flex-col break-all text-xl font-bold mt-3 text-white rounded-xl select-all'>0x2A9718defF471f3Bb91FA0ECEAB14154F150a385</code>
+                        <code onClick={(e) => copyToClipboard(e.target.id)} id="0x2A9718defF471f3Bb91FA0ECEAB14154F150a385" className='mt-5 cursor-pointer flex text-base bg-white bg-opacity-60 hover:bg-opacity-100 active:bg-green-500 rounded-lg p-2 px-4 text-black font-semibold w-max mt-5 '>Copy Address</code>
+                        <div className={animation}><Pop/></div>
                     </div>
                 </div>
                 <div className='mt-12 flex-1'>
@@ -155,7 +184,12 @@ const Roadmap = () => {
             <div className='grid grid-flow-row grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 mt-16 mb-10'>
                 <SectionListItems/>
             </div>
-            <div className='text-base text-normal mt-5 leading-relaxed'>Our whitepaper is available to download by <a href={process.env.PUBLIC_URL + './static/StageLink_Whitepaper-1.pdf'} className='inline-block text-blue-500 hover:underline active:text-indigo-700 cursor-pointer'>clicking on this link.</a></div>
+            <div className='container mx-auto px-10'>
+                <div className='bg-black p-5 rounded-xl bg-opacity-50 px-5 text-center justify-center'>
+                    <div className='text-base text-normal mt-5 leading-relaxed'>Our whitepaper is available for download by all.</div>
+                    <a href={process.env.PUBLIC_URL + './static/StageLink_Whitepaper-1.pdf'} className='mt-5 cursor-pointer flex text-base bg-white bg-opacity-60 hover:bg-opacity-100 active:bg-green-500 rounded-lg p-2 px-4 text-black font-semibold w-max mt-5 mx-auto'><code>Download whitepaper</code></a>
+                </div>
+            </div>
         </div>
     )
 }

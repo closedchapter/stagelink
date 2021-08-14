@@ -12,9 +12,9 @@ const Bar = () => {
     const [modal, setModal] = useState(false);
     
     function NavListItems() {
-        const NavArray = [{name:"Home", link:"home"},{name:"Purpose", link:"purpose"},{name:"Tokenomics", link:"tokenomics"},{name:"Ecosystem and Benefits", link:"ecosystem-and-benefits"},{name:"How to buy", link:"how-to-buy"},{name:"Roadmap", link:"roadmap"}];
+        const NavArray = [{name:"Home", link:"home"},{name:"Purpose", link:"purpose"},{name:"Tokenomics", link:"tokenomics"},{name:"Ecosystem and Benefits", link:"ecosystem-and-benefits"},{name:"How to buy stagelink", link:"how-to-buy"},{name:"Roadmap", link:"roadmap"}];
     
-        return NavArray.map((item, index) => <Go onClick={() => setModal(!modal)} to={item.link} spy={true} smooth={true} key={index} className='sport-btn cursor-pointer select-none appearance-none font-bold transition duration-150 ease-in-out opacity-30 hover:opacity-100'>{item.name}</Go>);
+        return NavArray.map((item, index) => <Go onClick={() => setModal(false)} to={item.link} spy={true} smooth={true} key={index} className='sport-btn cursor-pointer select-none appearance-none font-bold transition duration-150 ease-in-out opacity-30 hover:opacity-100'>{item.name}</Go>);
       }
     
     const Modal = () => {
@@ -30,7 +30,25 @@ const Bar = () => {
                     </div>
                     <button className='p-5 text-white mr-4' onClick={() => setModal(!modal)}>{CloseSVG}</button>
                 </div>
-                <div className='p-5 flex flex-col h-full w-full justify-center mb-12 text-white text-3xl space-y-12'><NavListItems/></div>
+                <div className='p-5 flex flex-col h-full w-full justify-center text-white text-3xl space-y-8'><NavListItems/></div>
+                <div className='hidden flex mb-12 w-full justify-around items-center'>
+                    <a className='cursor-pointer flex text-base bg-white bg-opacity-60 hover:bg-opacity-100 active:bg-green-500 rounded-lg p-3 px-4 text-black font-semibold w-max' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
+                        <code>Buy Now</code>
+                    </a>
+                    <code className='text-white '>or</code>
+                    <a href={process.env.PUBLIC_URL + './static/StageLink_Whitepaper-1.pdf'} className='cursor-pointer flex text-base bg-white bg-opacity-60 hover:bg-opacity-100 active:bg-green-500 rounded-lg p-3 px-4 text-black font-semibold w-max'><code>Download Whitepaper</code></a>
+                </div>
+                <div className='flex h-10 w-full justify-around mb-10 border-opacity-20'>
+                    <a className='h-full filter invert opacity-20 hover:opacity-100' href={"https://t.me/StageLink"} target="_blank" rel="nofollow noopener noreferrer">
+                        <img className="h-full" src={require("./images/telegram.png").default} alt="" />
+                    </a>
+                    <a className='h-full filter invert opacity-20 hover:opacity-100' href={"https://twitter.com/StageLinkToken"} target="_blank" rel="nofollow noopener noreferrer">
+                        <img className="h-full" src={require("./images/twitter.png").default} alt="" />
+                    </a>
+                    <a className='h-full filter invert opacity-20 hover:opacity-100' href={"https://www.instagram.com/stagelinkofficial/"} target="_blank" rel="nofollow noopener noreferrer">
+                        <img className="h-full" src={require("./images/instagram.png").default} alt="" />
+                    </a>
+                </div>
             </div>
         )
     }
@@ -67,9 +85,9 @@ const Bar = () => {
 const Footer = () => {
     return (
         <div className='bg-black text-white'>
-            <div className='container mx-auto p-12 flex flex-col'>
+            <div className='container mx-auto p-12 flex flex-col opacity-70'>
                 <div className='flex h-7 space-x-10 mt-5'>
-                    <a className='h-full filter invert' href={"https://t.me/StageLink"} target="_blank" rel="nofollow noopener noreferrer">
+                    <a className='h-full filter invert ' href={"https://t.me/StageLink"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/telegram.png").default} alt="" />
                     </a>
                     <a className='h-full filter invert' href={"https://twitter.com/StageLinkToken"} target="_blank" rel="nofollow noopener noreferrer">
@@ -79,7 +97,7 @@ const Footer = () => {
                         <img className="h-full" src={require("./images/instagram.png").default} alt="" />
                     </a>
                 </div>
-                <div className='font-bold text-sm mt-10 sport-btn'>© 2021 STAGELINK. All Rights Reserved.</div>
+                <div className='font-bold text-sm mt-10 sport-btn '>© 2021 STAGELINK. All Rights Reserved.</div>
             </div>
         </div>
     )
