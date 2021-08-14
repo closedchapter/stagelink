@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Pop from './PopUp'
 import data from './data.json'
@@ -141,6 +141,17 @@ function copyToClipboard(textToCopy) {
 }
 
     const [animation, setAnimation] = useState('hidden');
+    
+    const triggerAnimation = () => {
+        setAnimation('animate__animated animate__zoomInUp')
+        let timer1 = setTimeout(() => setAnimation('animate__animated animate__bounceOutDown'), 3000)
+        return timer1
+    }
+
+    const handleClick = (event) => {
+        copyToClipboard(event);
+        triggerAnimation()
+     }
 
     return (
         <div id="how-to-buy" className='bg-gray-900 text-gray-200 p-7'>
@@ -152,8 +163,8 @@ function copyToClipboard(textToCopy) {
                     <div className='flex flex-col min-h mt-10  text-black rounded-3xl bg-black bg-opacity-20 p-5'>
                         <code className='text-base text-normal text-opacity-40 font-semibold leading-relaxed text-gray-200'>Contract address</code>
                         <code className='flex flex-col break-all text-xl font-bold mt-3 text-white rounded-xl select-all'>0x2A9718defF471f3Bb91FA0ECEAB14154F150a385</code>
-                        <code onClick={(e) => copyToClipboard(e.target.id)} id="0x2A9718defF471f3Bb91FA0ECEAB14154F150a385" className='mt-5 cursor-pointer flex text-base bg-white bg-opacity-60 hover:bg-opacity-100 active:bg-green-500 rounded-lg p-2 px-4 text-black font-semibold w-max mt-5 '>Copy Address</code>
-                        <div className={animation}><Pop/></div>
+                        <code onClick={(e) => handleClick(e.target.id)} id="0x2A9718defF471f3Bb91FA0ECEAB14154F150a385" className='mt-5 cursor-pointer flex text-base bg-white bg-opacity-60 hover:bg-opacity-100 active:bg-green-500 rounded-lg p-2 px-4 text-black font-semibold w-max mt-5 '>Copy Address</code>
+                        <div className={animation + ' fixed inset-0'}><Pop/></div>
                     </div>
                 </div>
                 <div className='mt-12 flex-1'>
