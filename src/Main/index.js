@@ -2,14 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import data from './data.json'
 
+
 const NavSVG = <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 3l7 7-7 7"></path></svg>
 const Landing = () => {
     return (
-        <div id="home" className='animate__animated animate__fadeIn h-screen bg-black grid grid-rows-4 justify-items-center text-white text-center relative'>
-            <div className='flex relative z-20'>
-            </div>
-            <div className='flex relative z-20 px-2'>
-                <div className='sport-btn text-5xl md:text-7xl font-black mb-auto bg-black bg-opacity-40 rounded-lg p-5'>Setting the <div className='inline-block text-red-500'>stage</div> for the revolution of <div className='inline-block text-red-500'>sports.</div></div>
+        <div id="home" className='animate__animated animate__fadeIn h-screen bg-black grid grid-rows-2 justify-items-center text-white text-center relative'>
+            <div className='flex relative z-20 p-5'>
+                <div className='my-auto sport-btn text-4xl md:text-5xl lg:text-7xl font-black bg-black bg-opacity-40 rounded-lg p-2'>Setting the <div className='inline-block text-red-500'>stage</div> for the revolution of <div className='inline-block text-red-500'>sports.</div></div>
             </div>
             <div className='flex relative z-20'>
                 <div className='mb-auto'>
@@ -150,17 +149,13 @@ function SectionListItems() {
   }
 
 const Roadmap = () => {
-    
-    const Download = () => {
-        
-    }
     return (
         <div id="roadmap" className='bg-gray-900 text-white p-7'>
             <div className='text-4xl font-extrabold mt-16'>Roadmap.</div>
             <div className='grid grid-flow-row grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 mt-16 mb-10'>
                 <SectionListItems/>
             </div>
-            <div className='text-base text-normal mt-5 leading-relaxed'>Our whitepaper is available to download by <div className='inline-block text-blue-500 hover:underline active:text-indigo-700 cursor-pointer' onClick={() => Download()}>clicking on this link.</div></div>
+            <div className='text-base text-normal mt-5 leading-relaxed'>Our whitepaper is available to download by <a href={process.env.PUBLIC_URL + './static/StageLink_Whitepaper-1.pdf'} className='inline-block text-blue-500 hover:underline active:text-indigo-700 cursor-pointer'>clicking on this link.</a></div>
         </div>
     )
 }
