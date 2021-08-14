@@ -1,19 +1,22 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import * as Scroll from 'react-scroll';
 
+let Go = Scroll.Link;
 
 const NavSVG = <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6h16M4 12h16M4 18h16"></path></svg>
 const CloseSVG = <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" /></svg>
 
-function NavListItems() {
-    const NavArray = [{name:"Section 1", link:""},{name:"Section 2", link:""},{name:"Section 3", link:""}];
-  
-    return NavArray.map((item) => <button className='sport-btn select-none appearance-none font-bold transition duration-150 ease-in-out opacity-30 hover:opacity-100' key={item}>{item.name}</button>);
-  }
-
 const Bar = () => {
     const [modal, setModal] = useState(false);
+    
+    function NavListItems() {
+        const NavArray = [{name:"Home", link:"home"},{name:"Purpose", link:"purpose"},{name:"Tokenomics", link:"tokenomics"},{name:"Ecosystem and Benefits", link:"ecosystem-and-benefits"},{name:"How to buy", link:"how-to-buy"},{name:"Roadmap", link:"roadmap"}];
+    
+        return NavArray.map((item, index) => <Go onClick={() => setModal(!modal)} to={item.link} spy={true} smooth={true} key={index} className='sport-btn cursor-pointer select-none appearance-none font-bold transition duration-150 ease-in-out opacity-30 hover:opacity-100'>{item.name}</Go>);
+      }
+    
     const Modal = () => {
         return (
             <div className='animate__animated animate__fadeIn animate__faster bg-black fixed inset-0 z-30 flex flex-col items-start h-full overflow-hidden'>
@@ -27,7 +30,7 @@ const Bar = () => {
                     </div>
                     <button className='p-5 text-white mr-4' onClick={() => setModal(!modal)}>{CloseSVG}</button>
                 </div>
-                <div className='flex flex-col h-full w-full justify-center text-white text-3xl space-y-12'><NavListItems/></div>
+                <div className='p-5 flex flex-col h-full w-full justify-center mb-12 text-white text-3xl space-y-12'><NavListItems/></div>
             </div>
         )
     }

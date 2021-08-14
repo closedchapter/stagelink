@@ -3,13 +3,12 @@ import { Link } from 'react-router-dom'
 import data from './data.json'
 
 const NavSVG = <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 3l7 7-7 7"></path></svg>
-
 const Landing = () => {
     return (
-        <div className='animate__animated animate__fadeIn h-screen bg-black grid grid-rows-4 justify-items-center text-white text-center relative'>
+        <div id="home" className='animate__animated animate__fadeIn h-screen bg-black grid grid-rows-4 justify-items-center text-white text-center relative'>
             <div className='flex relative z-20'>
             </div>
-            <div className='flex relative z-20 px-8'>
+            <div className='flex relative z-20 px-2'>
                 <div className='sport-btn text-5xl md:text-7xl font-black mb-auto bg-black bg-opacity-40 rounded-lg p-5'>Setting the <div className='inline-block text-red-500'>stage</div> for the revolution of <div className='inline-block text-red-500'>sports.</div></div>
             </div>
             <div className='flex relative z-20'>
@@ -32,8 +31,7 @@ const Landing = () => {
 
 const Purpose = () => {
     return (
-        <div className='bg-black text-white p-7 text-center relative overflow-hidden'>
-            
+        <div id="purpose" className='bg-black text-white p-7 text-center relative overflow-hidden'>
             <div className='text-4xl font-extrabold mt-20 mb-10 lg:px-52 z-10 relative'>Together, we’re taking over a multi-billion dollar industry.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
@@ -63,7 +61,7 @@ const Purpose = () => {
 
 const Ecosystem = () => {
     return (
-        <div className='bg-gradient-to-b from-black via-black to-gray-900 text-white p-7'>
+        <div id="ecosystem-and-benefits" className='bg-gradient-to-b from-black via-black to-gray-900 text-white p-7'>
             <div className='text-4xl font-extrabold mt-16'>Ecosystem and Benefits.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
@@ -87,7 +85,7 @@ const Ecosystem = () => {
 
 const Tokenomics = () => {
     return (
-        <div className='bg-black bg-opacity-95 text-white p-7'>
+        <div id="tokenomics" className='bg-black bg-opacity-95 text-white p-7'>
             <div className='text-4xl font-extrabold mt-16'>Tokenomics.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
@@ -118,7 +116,7 @@ const Tokenomics = () => {
 
 const HowTo = () => {
     return (
-        <div className='bg-gray-900 text-gray-200 p-7'>
+        <div id="how-to-buy" className='bg-gray-900 text-gray-200 p-7'>
             <div className='text-4xl font-extrabold mt-16'>How to buy STAGELINK now.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
@@ -152,12 +150,17 @@ function SectionListItems() {
   }
 
 const Roadmap = () => {
+    
+    const Download = () => {
+        
+    }
     return (
-        <div className='bg-gray-900 text-white p-7'>
+        <div id="roadmap" className='bg-gray-900 text-white p-7'>
             <div className='text-4xl font-extrabold mt-16'>Roadmap.</div>
             <div className='grid grid-flow-row grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 mt-16 mb-10'>
                 <SectionListItems/>
             </div>
+            <div className='text-base text-normal mt-5 leading-relaxed'>Our whitepaper is available to download by <div className='inline-block text-blue-500 hover:underline active:text-indigo-700 cursor-pointer' onClick={() => Download()}>clicking on this link.</div></div>
         </div>
     )
 }
@@ -167,45 +170,14 @@ const Main = () => {
         <div className='pt-16'>
             <div className='bg-black'><Landing /></div>
             <div className='container mx-auto'>
-                <Purpose />
-                <Tokenomics />
-                <Ecosystem />
-                <HowTo />
-                <Roadmap />
+                <Purpose/>
+                <Tokenomics/>
+                <Ecosystem/>
+                <HowTo/>
+                <Roadmap/>
             </div>
         </div>
     )
 }
 
 export default Main
-
-/*
-const Landing = () => {
-    return (
-        <div className='animate__animated animate__fadeIn flex flex-col lg:flow-row bg-black text-center text-white overflow-hidden h-screen relative'>
-            <div className='bg-white bg-opacity-20 fixed left-28 rounded-xl p-2 m-5 px-3 z-50'>
-                <div className='text-white text-xs font-medium'>Version: GAYNINJA</div>
-            </div>
-            <div className='absolute w-full h-full z-0 transform'>
-                <img className='absolute transform translate-y-16 h-full w-full object-cover scale-75' src={require("./images/bgimg.jpg").default} alt=''/>
-                <div className='transform translate-y-52 absolute bg-gradient-to-b from-transparent via-black to-black h-full w-full'></div>
-            </div>
-            <div className='flex flex-col p-5 flex-1 relative z-10 h-full justify-start container mx-auto'>
-                <div className='flex flex-col md:mt-16 lg:px-36'>
-                    <img className="w-6 h-6 filter invert mx-auto opacity-40 mt-5 hidden" src={require("./images/boxing-gloves.png").default} alt="" /> 
-                    <div className='sport-btn text-5xl md:text-7xl font-black mt-16 md:mt-16'>Setting the <div className='inline-block text-red-700'>stage</div> for the revolution of <div className='inline-block text-red-700'>sports.</div></div>
-                    <div className='text-lg lg:text-base font-medium opacity-70 mt-21 hidden'>With the recent surge of pro/influencer pay-per-view exhibitions, entertaining millions of fans worldwide, Generating billions of revenue per year, we aim to utilise on this and be the first ever token to incorporate cryptocurrency into the ppv/sports industry by hosting our own exhibitions in which holders will be payed a percentage of revenue generated.</div>
-                </div>
-                <a className='sport-btn flex mx-auto mt-32 justify-center align-center items-center py-3 px-6 select-none text-black text-lg font-semibold rounded-sm bg-white hover:bg-gray-400 active:text-white active:bg-gray-800' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
-                    <div className='mr-7'>Buy Now</div>
-                    <div className='w-4'>{NavSVG}</div>
-                </a>
-                <Link to='/live' className='sport-btn flex mx-auto mt-5 justify-center align-center items-center py-3 px-6 select-none text-white text-lg font-semibold rounded-sm ring-2 ring-white hover:bg-gray-400 active:text-white active:bg-gray-800'>
-                    <div className='mr-7'>View Upcoming</div>
-                    <div className='w-4'>{NavSVG}</div>
-                </Link>
-            </div>
-        </div>
-    )
-}
-*/
