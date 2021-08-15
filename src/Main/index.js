@@ -8,15 +8,15 @@ const Landing = () => {
     return (
         <div id="home" className='filter brightness-125 contrast-125 animate__animated animate__fadeIn h-screen bg-black grid grid-rows-2 justify-items-center text-white text-center relative overflow-hidden'>
             <div className='flex relative z-20 p-5'>
-                <div className='my-auto sport-btn text-4xl md:text-5xl lg:text-7xl font-black bg-black bg-opacity-40 rounded-lg p-2'>Setting the <div className='inline-block text-red-500'>stage</div> for the revolution of <div className='inline-block text-red-500'>sports.</div></div>
+                <div className='title my-auto text-3xl md:text-5xl lg:text-7xl font-semibold bg-black bg-opacity-40 rounded-lg p-2 uppercase'>Setting the <div className='inline-block text-red-500'>stage</div> for the revolution of <div className='inline-block text-red-500'>sports.</div></div>
             </div>
             <div className='flex relative z-20'>
                 <div className='mb-auto bg-black bg-opacity-40 rounded-xl p-5'>
-                    <a className='sport-btn flex justify-center align-center items-center py-3 px-6 select-none text-black text-lg font-semibold rounded-sm bg-white hover:bg-gray-400 active:text-white active:bg-gray-800' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
+                    <a className='flex justify-center align-center items-center py-3 px-6 select-none text-black text-lg font-bold rounded-lg bg-white hover:bg-gray-400 active:text-white active:bg-gray-800' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
                         <div className='mr-7'>Buy Now</div>
                         <div className='w-4'>{NavSVG}</div>
                     </a>
-                    <Link to='/live' className='sport-btn flex mt-5 justify-center align-center items-center py-3 px-6 select-none text-white text-lg font-semibold rounded-sm ring-2 ring-white hover:bg-gray-400 active:text-white active:bg-gray-800'>
+                    <Link to='/live' className='flex mt-5 justify-center align-center items-center py-3 px-6 select-none text-white text-lg font-semibold rounded-sm ring-2 ring-white hover:bg-gray-400 active:text-white active:bg-gray-800'>
                         <div className='mr-7'>View Upcoming</div>
                         <div className='w-4'>{NavSVG}</div>
                     </Link>
@@ -36,14 +36,8 @@ const Landing = () => {
 const Purpose = () => {
     return (
         <div id="purpose" className='bg-black text-white p-7 text-center relative overflow-hidden'>
-
-            <div className='relative h-max -m-7 my-16 py-16 flex items-center overflow-hidden'>
-                <div className='bg-black bg-opacity-30 rounded-xl z-10 text-4xl font-extrabold container mx-auto md:px-52 p-5'>Together, we’re taking over a <div className='text-red-600 inline-block'>multi-billion</div> dollar industry.</div>
-                <img className='absolute z-0 w-full h-full object-cover origin-top transform scale-150' src={require("./images/imagery.jpg").default} alt=''/>
-                <div className='absolute z-0 w-full h-full  bg-gradient-to-b from-transparent to-black'></div>
-            </div>
-
-            <div className='flex flex-col mb-20 container mx-auto md:w-1/2'>
+            <div className='bg-black bg-opacity-30 rounded-xl z-10 text-4xl font-extrabold container mx-auto md:px-52 p-5'>Together, we’re taking over a <div className='text-red-600 inline-block'>multi-billion</div> dollar industry.</div>
+            <div className='flex flex-col mb-20 container mx-auto md:w-1/2 text-white text-opacity-90 font-normal'>
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>The world's first sport token, with real-life utility, using blockchain technology.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'><b>STAGELINK</b> is the latest pioneering utility token built to disrupt the exploitative PPV industry, and replace it with the stagelink ecosystem that rewards its holders via different avenues.</div>
@@ -53,8 +47,7 @@ const Purpose = () => {
                     <div className='text-base text-normal mt-5 leading-relaxed'>Our goal is to decentralise the sports entertainment industry by implementing the Pay-Per-View system and hosting professional & influencer boxing exhibition that can be enjoyed by fans from all over the world.</div>
                 </div>
             </div>
-
-            <div className='flex flex-col text-sm text-normal rounded-2xl bg-white bg-opacity-10 p-10 text-left mb-20'>
+            <div className='flex flex-col text-sm text-white text-opacity-90 font-normal rounded-2xl bg-white bg-opacity-10 p-10 text-left mb-20'>
             <div className='text-lg font-extrabold text-center md:text-left'>Out with the <div className='inline-block text-blue-500'>OLD</div> and in with the <div className='inline-block text-blue-500'>NEW.</div></div>
                 <div className='flex flex-col md:flex-row md:space-x-20'> 
                     <div className='flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>The old Pay-Per-View can only be bought through fiat which will be made more redundant as crypto becomes more prominent, however StageLink offers the cryptocurrency option.</div>
@@ -71,23 +64,32 @@ const Purpose = () => {
 
 const Ecosystem = () => {
     return (
-        <div id="ecosystem-and-benefits" className='bg-black text-white p-7'>
-        
-            <div className='text-4xl font-extrabold mt-4'>Ecosystem and Benefits.</div>
-            <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
+        <div id="ecosystem-and-benefits" className='bg-black text-white p-7 text-white text-opacity-90 font-normal overflow-hidden'>
+            <div className='text-5xl font-extrabold mt-4 h-max relative overflow-hidden flex items-center py-16'>
+                <img className='absolute' src={require("./images/arena.jpg").default} alt=''/>
+                    <div className='absolute bg-gradient-to-b from-black via-transparent to-transparent h-full w-full'/>
+                    <div className='absolute bg-gradient-to-t from-black via-transparent to-transparent h-full w-full'/>
+                    <div className='absolute bg-gradient-to-r from-black via-transparent to-transparent h-full w-full'/>
+                    <div className='absolute bg-gradient-to-l from-black via-transparent to-transparent h-full w-full'/>
+                <div className='relative text-center mx-auto md:text-7xl text-opacity-100'>Ecosystem and Benefits.</div>
+            </div>
+            <div className='flex flex-col md:flex-row md:space-x-20 mb-'>
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>Joining us rewards you.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>All holders of our utility token are rewarded generously because we understand how important your support is. Becoming a holder means you lose nothing and gain everything.</div>
                     <div className='text-base text-normal mt-5 bg-white bg-opacity-10 text-gray-100 rounded p-4 space-y-5 shadow-xl'>
-                        <div className='flex flex-col mb-2'><b className='text-2xl'>10%</b><div>towards <b>holders</b> from merch profit.</div></div>
-                        <div className='flex flex-col mb-2'><b className='text-2xl'>10%</b><div>reinvested into token from merch profit.</div></div>
-                        <div className='flex flex-col mb-2'><b className='text-2xl'>5%</b><div>towards <b>holders</b> from event profit.</div></div>
-                        <div className='flex flex-col mb-2'><b className='text-2xl'>5%</b><div>reinvested into token from event profit.</div></div>
+                        <div className='flex flex-col mb-2'><b className='text-xl'>10%</b><div>towards <b>holders</b> from merch profit.</div></div>
+                        <div className='flex flex-col mb-2'><b className='text-xl'>10%</b><div>reinvested into token from merch profit.</div></div>
+                        <div className='flex flex-col mb-2'><b className='text-xl'>5%</b><div>towards <b>holders</b> from event profit.</div></div>
+                        <div className='flex flex-col mb-2'><b className='text-xl'>5%</b><div>reinvested into token from event profit.</div></div>
                     </div>
                 </div>
-                <div className='mt-12 flex-1'>
+                <div className='mt-12 flex-1 overflow-visible'>
                     <div className='text-xl font-extrabold'>We provide loyalty rewards.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>We value our holders so to show our appreciation we are the first token to implement the loyalty rewards, holders that don't sell their token will get 25% of their purchasing fees weekly. 5% of the initial supply is allocated in a wallet to the loyalty rewards.</div>
+                    <div className='h-80'>
+                        <img className='h-full mx-auto transform scale-125 translate-y-20 object-cover' src={require("./images/rewardphoto.png").default} alt=''/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -96,7 +98,7 @@ const Ecosystem = () => {
 
 const Tokenomics = () => {
     return (
-        <div id="tokenomics" className='bg-black bg-opacity-95 text-white p-7'>
+        <div id="tokenomics" className='bg-black bg-opacity-95 p-7 text-white text-opacity-90 font-normal'>
             <div className='text-4xl font-extrabold mt-16'>Tokenomics.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
@@ -104,7 +106,7 @@ const Tokenomics = () => {
                     <div className='text-base text-normal mt-5 leading-relaxed'></div>
                     <div className='text-base text-normal ml-5 mt-5'>
                         <li><b>1 quadrillion</b> supply.</li>
-                        <li>no<b>developer wallet</b>.</li>
+                        <li>No<b> Developer Wallet</b>.</li>
                         <li><b>liquidity locked</b> for 1 year.</li>
                         <li><b>5%</b> distributed to <b>burn wallet</b>.</li>
                         <li><b>5%</b> distributed to <b>loyalty rewards wallet</b>.</li>
@@ -174,7 +176,7 @@ function copyToClipboard(textToCopy) {
     }
 
     return (
-        <div id="how-to-buy" className='bg-gray-900 text-gray-200 p-7'>
+        <div id="how-to-buy" className='bg-gray-900 text-gray-200 p-7 text-white text-opacity-95 font-normal'>
             <div className={animation + ' fixed inset-x-0 container mx-auto px-10 md:px-32 bottom-16 z-50'}><Pop/></div>
             <div className='text-4xl font-extrabold mt-16'>How to buy STAGELINK now.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
@@ -210,7 +212,7 @@ function SectionListItems() {
 
 const Roadmap = () => {
     return (
-        <div id="roadmap" className='bg-gray-900 text-white p-7'>
+        <div id="roadmap" className='bg-gray-900 text-white p-7 text-white text-opacity-95 font-normal'>
             <div className='text-4xl font-extrabold mt-16'>Roadmap.</div>
             <div className='grid grid-flow-row grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 mt-16 mb-10'>
                 <SectionListItems/>
@@ -227,7 +229,7 @@ const Roadmap = () => {
 
 const Main = () => {
     return (
-        <div className='pt-16'>
+        <div className='pt-16 overflow-hidden'>
             
             <div className='bg-black'><Landing /></div>
             <div className='container mx-auto'>

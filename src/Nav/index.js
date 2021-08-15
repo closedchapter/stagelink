@@ -12,20 +12,20 @@ const Bar = () => {
     const [modal, setModal] = useState(false);
     
     function NavListItems() {
-        const NavArray = [{name:"Home", link:"home"},{name:"Purpose", link:"purpose"},{name:"Tokenomics", link:"tokenomics"},{name:"Ecosystem and Benefits", link:"ecosystem-and-benefits"},{name:"How to buy stagelink", link:"how-to-buy"},{name:"Roadmap", link:"roadmap"}];
+        const NavArray = [{name:"Purpose", link:"purpose"},{name:"Tokenomics", link:"tokenomics"},{name:"Ecosystem and Benefits", link:"ecosystem-and-benefits"},{name:"How to buy stagelink", link:"how-to-buy"},{name:"Roadmap", link:"roadmap"}];
     
-        return NavArray.map((item, index) => <Go onClick={() => setModal(false)} to={item.link} spy={true} smooth={true} key={index} className='sport-btn cursor-pointer select-none appearance-none font-bold transition duration-150 ease-in-out opacity-30 hover:opacity-100'>{item.name}</Go>);
+        return NavArray.map((item, index) => <Go onClick={() => setModal(false)} to={item.link} spy={true} smooth={true} key={index} className='uppercase cursor-pointer select-none appearance-none font-bold transition duration-150 ease-in-out opacity-30 hover:opacity-100'>{item.name}</Go>);
       }
     
     const Modal = () => {
         return (
             <div className='animate__animated animate__fadeIn animate__faster bg-black fixed inset-0 z-30 flex flex-col items-start h-full overflow-hidden'>
                 <div className='flex w-full'>
-                    <div className='flex-1'>
-                        <Link to='/' className='p-5 flex w-max items-center sport-btn'>
-                            <div className='text-white text-lg font-bold'>Stage</div>
+                    <div className='flex-1 title'>
+                        <Link to='/' className='p-5 flex w-max items-center'>
+                            <div className='text-white text-lg font-bold'>STAGE</div>
                             <img className="w-4 h-full filter invert" src={require("./images/link.png").default} alt="" />
-                            <div className='text-white text-lg font-bold'>Link</div>
+                            <div className='text-white text-lg font-bold'>LINK</div>
                         </Link>
                     </div>
                     <button className='p-5 text-white mr-4' onClick={() => setModal(!modal)}>{CloseSVG}</button>
@@ -56,10 +56,10 @@ const Bar = () => {
         <div>
             <div className='select-none fixed bg-gray-900 text-white z-30 flex items-center h-16 px-5 w-full'>
                 <div className='flex flex-1 items-center'>
-                    <Link to='/' className='flex items-center sport-btn'>
-                        <div className='text-white text-lg font-bold'>Stage</div>
+                    <Link to='/' className='flex items-center title'>
+                        <div className='text-white text-lg font-bold'>STAGE</div>
                         <img className="w-4 h-full filter invert" src={require("./images/link.png").default} alt="" />
-                        <div className='text-white text-lg font-bold'>Link</div>
+                        <div className='text-white text-lg font-bold'>LINK</div>
                     </Link>
                 </div>
                 <button className='lg:hidden'>
@@ -70,7 +70,7 @@ const Bar = () => {
                     <button className='p-4' onClick={() => setModal(!modal)}>{CloseSVG}</button>
                     }
                 </button>
-                <div className='hidden lg:flex pr-12 space-x-10 text-lg'><NavListItems/></div>
+                <div className='hidden lg:flex pr-12 space-x-5 text-base'><NavListItems/></div>
             </div>
             {
                 !modal ?
@@ -97,7 +97,7 @@ const Footer = () => {
                         <img className="h-full" src={require("./images/instagram.png").default} alt="" />
                     </a>
                 </div>
-                <div className='font-bold text-sm mt-10 sport-btn '>© 2021 STAGELINK. All Rights Reserved.</div>
+                <div className='font-bold text-sm mt-10'>© 2021 STAGELINK. All Rights Reserved.</div>
             </div>
         </div>
     )

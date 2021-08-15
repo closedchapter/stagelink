@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+.title {
+  font-family: 'Bebas Neue', cursive;
+}
+
+a,
+html {
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,20 +14,6 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-/* ./src/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.sport-btn {
-  font-family: 'Bebas Neue', cursive;
-}
-
-.shadow-cta {
-  -webkit-box-shadow: 0px 0px 15px 5px rgba(31,41,55, 0.618);
-  box-shadow: 0px 0px 15px 5px rgba(31,41,55, 0.618);
 }
 
 .neonText {
@@ -96,3 +84,8 @@ code {
   50% { transform: skew(-2deg, -4deg); }
   100% { transform: skew(0deg, 0deg); }
 }
+
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
