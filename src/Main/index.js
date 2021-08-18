@@ -85,8 +85,10 @@ const Ecosystem = () => {
                 <div className='mt-12 flex-1 overflow-visible'>
                     <div className='text-xl font-extrabold'>We provide loyalty rewards.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>We value our holders so to show our appreciation we are the first token to implement the loyalty rewards, holders that don't sell their token will get 25% of their purchasing fees weekly. 5% of the initial supply is allocated in a wallet to the loyalty rewards.</div>
-                    <div className='h-80'>
-                        <img className='h-full mx-auto transform scale-125 translate-y-20 object-cover' src={require("./images/rewardphoto.png").default} alt=''/>
+                    <div className='h-80 overflow-hidden relative'>
+                        <div className='bg-gradient-to-r from-black via-transparent to-transparent absolute w-full h-full z-10'/>
+                        <div className='bg-gradient-to-l from-black via-transparent to-transparent absolute w-full h-full z-10'/>
+                        <img className='filter contrast-125 mx-auto' src={require('./images/animation.gif').default} alt="loading..." />
                     </div>
                 </div>
             </div>
@@ -184,7 +186,7 @@ function copyToClipboard(textToCopy) {
                     <div className='flex flex-col min-h mt-10  text-black rounded-3xl bg-black bg-opacity-20 p-5'>
                         <code className='text-base text-normal text-opacity-40 font-semibold leading-relaxed text-gray-200'>Contract address</code>
                         <code className='flex flex-col break-all text-xl font-bold mt-3 text-white rounded-xl select-all'>0x586BE86a231162F4bB81396c8a71380Eb6d6F891</code>
-                        <code onClick={(e) => handleClick(e.target.id)} id="0x2A9718defF471f3Bb91FA0ECEAB14154F150a385" className='mt-5 cursor-pointer flex text-base bg-white bg-opacity-60 hover:bg-opacity-100 active:bg-green-500 rounded-lg p-2 px-4 text-black font-semibold w-max mt-5 '>Copy Address</code>
+                        <code onClick={(e) => handleClick(e.target.id)} id="0x2A9718defF471f3Bb91FA0ECEAB14154F150a385" className='mt-5 cursor-pointer flex text-base bg-blue-500 bg-opacity-60 hover:bg-opacity-100 active:bg-red-500 rounded-lg p-2 px-4 text-white font-semibold w-max mt-5 '>Copy Address</code>
                     </div>
                 </div>
                 <div className='mt-12 flex-1'>
@@ -217,7 +219,7 @@ const Roadmap = () => {
             </div>
             <div className='container mx-auto px-10'>
                 <div className='bg-black p-5 rounded-xl bg-opacity-50 px-5 text-center justify-center'>
-                    <a href={process.env.PUBLIC_URL + './static/StageLink_Whitepaper-1.pdf'} className='mt-5 cursor-pointer flex text-base bg-white bg-opacity-60 hover:bg-opacity-100 active:bg-green-500 rounded-lg p-2 px-4 text-black font-semibold w-max mt-5 mx-auto'><code>Download whitepaper</code></a>
+                    <a href={process.env.PUBLIC_URL + './static/StageLink_Whitepaper-1.pdf'} className='mt-5 cursor-pointer flex text-base bg-blue-500 bg-opacity-60 hover:bg-opacity-100 active:bg-red-500 rounded-lg p-2 px-4 text-white font-semibold w-max mt-5 mx-auto'><code>Download whitepaper</code></a>
                 </div>
             </div>
         </div>
