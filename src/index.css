@@ -20,6 +20,18 @@
   border-left: 2px solid #f3371e;
 }
 
+.box-full {
+  border-top: 2px solid #1f7deb;
+  border-right: 2px solid #1f7deb;
+  border-bottom: 2px solid #1f7deb;
+  border-left: 2px solid #1f7deb;
+}
+
+.flip {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
 a,
 html {
   font-family: 'Inter', sans-serif;

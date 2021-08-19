@@ -35,7 +35,12 @@ const Landing = () => {
 
 const Purpose = () => {
     return (
-        <div id="purpose" className='bg-black text-white p-7 text-center relative overflow-hidden'>
+        <div id="purpose" className='bg-black text-white p-7 pt-0 text-center overflow-hidden relative z-20'>
+            <div className='h-72 md:h-96 relative z-10'>
+                <div className='absolute w-full h-full bg-gradient-to-t from-black via-transparent to-transparent z-10' />
+                <img className='absolute left-0 h-full object-cover z-0' src={require("./images/Anthony.png").default} alt=''/>
+                <img className='absolute right-0 h-full object-cover flip z-0' src={require("./images/Tyson.png").default} alt=''/>
+            </div>
             <div className='bg-black bg-opacity-30 rounded-xl z-10 text-4xl font-extrabold container mx-auto md:px-52 p-5'>Together, we’re taking over a <div className='text-red-600 inline-block'>multi-billion</div> dollar industry.</div>
             <div className='flex flex-col mb-20 container mx-auto md:w-1/2 text-white text-opacity-90 font-normal'>
                 <div className='mt-12 flex-1'>
@@ -75,7 +80,7 @@ const Ecosystem = () => {
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>Joining us rewards you.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>All holders of our utility token are rewarded generously because we understand how important your support is. Becoming a holder means you lose nothing and gain everything.</div>
-                    <div className='box-a text-base text-normal mt-5 bg-white bg-opacity-5 text-gray-100 rounded p-4 space-y-5 shadow-xl'>
+                    <div className='box-a text-base text-normal mt-5 bg-white bg-opacity-0 text-gray-100 rounded p-4 space-y-5 shadow-xl'>
                         <div className='flex flex-col mb-2'><b className='text-xl'>10%</b><div>towards <b>holders</b> from merch profit.</div></div>
                         <div className='flex flex-col mb-2'><b className='text-xl'>10%</b><div>reinvested into token from merch profit.</div></div>
                         <div className='flex flex-col mb-2'><b className='text-xl'>5%</b><div>towards <b>holders</b> from event profit.</div></div>
@@ -116,7 +121,7 @@ const Tokenomics = () => {
                 <div className='box-a mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
                     <div className='text-xl font-extrabold'>Transaction Fee (12%)</div>
                     <div className='text-base text-normal ml-5 mt-5'>
-                    <li><b>3%</b> rewarded to <b>holders</b>.</li>
+                        <li><b>3%</b> BNB rewards to <b>holders</b>.</li>
                         <li><b>3%</b> re-invested towards <b>liquidity</b>.</li>
                         <li><b>3%</b> invested into <b>marketing</b>.</li>
                         <li><b>3%</b> towards <b>brand development</b>.</li>
@@ -218,8 +223,8 @@ const Roadmap = () => {
                 <SectionListItems/>
             </div>
             <div className='container mx-auto px-10'>
-                <div className='box-roadmap bg-black p-5 rounded-xl bg-opacity-50 px-5 text-center justify-center'>
-                    <a href={process.env.PUBLIC_URL + './static/StageLink_Whitepaper-1.pdf'} className='mt-5 cursor-pointer flex text-base bg-blue-500 bg-opacity-60 hover:bg-opacity-100 active:bg-red-500 rounded-lg p-2 px-4 text-center text-white font-semibold w-full md:w-max mt-5 mx-auto'><code>View Whitepaper</code></a>
+                <div className='box-full bg-black p-5 rounded-xl bg-opacity-50 px-5 text-center justify-center w-max mx-auto'>
+                    <a href={process.env.PUBLIC_URL + './static/StageLink_Whitepaper-1.pdf'} className='cursor-pointer flex text-base bg-blue-500 bg-opacity-60 hover:bg-opacity-100 active:bg-red-500 rounded-lg p-2 px-4 text-center text-white font-semibold w-full md:w-max mt-5 mx-auto'><code>View Whitepaper</code></a>
                 </div>
             </div>
         </div>
@@ -229,7 +234,6 @@ const Roadmap = () => {
 const Main = () => {
     return (
         <div className='pt-16 overflow-hidden'>
-            
             <div className='bg-black'><Landing /></div>
             <div className='container mx-auto'>
                 <Purpose/>
