@@ -50,12 +50,12 @@ const Purpose = () => {
             <div className='flex flex-col text-sm text-white text-opacity-90 font-normal rounded-2xl bg-white bg-opacity-10 p-10 text-left mb-20'>
             <div className='text-lg font-extrabold text-center md:text-left'>Out with the <div className='inline-block text-blue-500'>OLD</div> and in with the <div className='inline-block text-blue-500'>NEW.</div></div>
                 <div className='flex flex-col md:flex-row md:space-x-20'> 
-                    <div className='flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>The old Pay-Per-View can only be bought through fiat which will be made more redundant as crypto becomes more prominent, however StageLink offers the cryptocurrency option.</div>
-                    <div className='flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>Pay-Per-View is bought for entertainment purposes, however, often the fights can be underwhelming and leave a sour taste when matches are quickly concluded. Buying from StageLink will provide other benefits so the customer is always left happy.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>The old Pay-Per-View can only be bought through fiat which will be made more redundant as crypto becomes more prominent, however StageLink offers the cryptocurrency option.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>Pay-Per-View is bought for entertainment purposes, however, often the fights can be underwhelming and leave a sour taste when matches are quickly concluded. Buying from StageLink will provide other benefits so the customer is always left happy.</div>
                 </div>
                 <div className='flex flex-col md:flex-row md:space-x-20'> 
-                    <div className='flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>The current Pay-Per-View is over-priced due the monopolisation of the industry, we will charge fairer prices so that the common working man can afford to see these fights as we understand many people aspire to be able to watch these fights live and in person at least once in their life.</div>
-                    <div className='flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>Combat sports fighters often get taken advantage of due to the aforementioned monopolisation, lesser known fighters cannot advocate for themselves to receive a fair pay. StageLink wishes to see equal pay and opportunities in this industry.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>The current Pay-Per-View is over-priced due the monopolisation of the industry, we will charge fairer prices so that the common working man can afford to see these fights as we understand many people aspire to be able to watch these fights live and in person at least once in their life.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>Combat sports fighters often get taken advantage of due to the aforementioned monopolisation, lesser known fighters cannot advocate for themselves to receive a fair pay. StageLink wishes to see equal pay and opportunities in this industry.</div>
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@ const Ecosystem = () => {
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>Joining us rewards you.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>All holders of our utility token are rewarded generously because we understand how important your support is. Becoming a holder means you lose nothing and gain everything.</div>
-                    <div className='text-base text-normal mt-5 bg-white bg-opacity-10 text-gray-100 rounded p-4 space-y-5 shadow-xl'>
+                    <div className='box text-base text-normal mt-5 bg-white bg-opacity-10 text-gray-100 rounded p-4 space-y-5 shadow-xl'>
                         <div className='flex flex-col mb-2'><b className='text-xl'>10%</b><div>towards <b>holders</b> from merch profit.</div></div>
                         <div className='flex flex-col mb-2'><b className='text-xl'>10%</b><div>reinvested into token from merch profit.</div></div>
                         <div className='flex flex-col mb-2'><b className='text-xl'>5%</b><div>towards <b>holders</b> from event profit.</div></div>
@@ -101,7 +101,7 @@ const Tokenomics = () => {
         <div id="tokenomics" className='bg-black bg-opacity-95 p-7 text-white text-opacity-90 font-normal'>
             <div className='text-4xl font-extrabold mt-16'>Tokenomics.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
-                <div className='mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
+                <div className='box mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
                     <div className='text-xl font-extrabold'>Wallet Distribution</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'></div>
                     <div className='text-base text-normal ml-5 mt-5'>
@@ -113,7 +113,7 @@ const Tokenomics = () => {
                         <li><b>10%</b> distributed to <b>marketing wallet</b>.</li>
                     </div>
                 </div>
-                <div className='mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
+                <div className='box mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
                     <div className='text-xl font-extrabold'>Transaction Fee (12%)</div>
                     <div className='text-base text-normal ml-5 mt-5'>
                     <li><b>3%</b> rewarded to <b>holders</b>.</li>
@@ -183,7 +183,7 @@ function copyToClipboard(textToCopy) {
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>Setup your digital wallet.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>Set up your <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://metamask.io/"} target="_blank" rel="nofollow noopener noreferrer">MetaMask currency wallet</a> and configure it to the Binance Smart Chain Network. If you're not sure on how to do this, <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.bsc.news/post/connecting-metamask-wallet-to-the-binance-smart-chain"} target="_blank" rel="nofollow noopener noreferrer">here's a handy guide.</a></div><div className='text-base text-normal mt-5 leading-relaxed'><b>You’ll need to purchase STAGELINK coins with BNB (Smart Chain).</b> Make sure you have enough BNB coins. If not, you can buy BNB on cryptocurrency exchanges like <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.binance.com/"} target="_blank" rel="nofollow noopener noreferrer">Binance</a> and then send it over to your MetaMask wallet. <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://crypto-explained.com/services/send-bnb-coin-to-binance-smart-chain-on-metamask/"} target="_blank" rel="nofollow noopener noreferrer">Here’s a guide on how you can do so quickly and safely</a>.</div>
-                    <div className='flex flex-col min-h mt-10  text-black rounded-3xl bg-black bg-opacity-20 p-5'>
+                    <div className='box flex flex-col min-h mt-10  text-black rounded-3xl bg-black bg-opacity-20 p-5'>
                         <code className='text-base text-normal text-opacity-40 font-semibold leading-relaxed text-gray-200'>Contract address</code>
                         <code className='flex flex-col break-all text-xl font-bold mt-3 text-white rounded-xl select-all'>0x586BE86a231162F4bB81396c8a71380Eb6d6F891</code>
                         <code onClick={(e) => handleClick(e.target.id)} id="0x2A9718defF471f3Bb91FA0ECEAB14154F150a385" className='mt-5 cursor-pointer flex text-base bg-blue-500 bg-opacity-60 hover:bg-opacity-100 active:bg-red-500 rounded-lg p-2 px-4 text-white font-semibold w-max mt-5 '>Copy Address</code>
@@ -212,14 +212,14 @@ function SectionListItems() {
 
 const Roadmap = () => {
     return (
-        <div id="roadmap" className='bg-gray-900 text-white p-7 text-white text-opacity-95 font-normal'>
+        <div id="roadmap" className='bg-black bg-opacity-95 text-white p-7 text-white text-opacity-95 font-normal'>
             <div className='text-4xl font-extrabold mt-16'>Roadmap.</div>
             <div className='grid grid-flow-row grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 mt-16 mb-10'>
                 <SectionListItems/>
             </div>
             <div className='container mx-auto px-10'>
-                <div className='bg-black p-5 rounded-xl bg-opacity-50 px-5 text-center justify-center'>
-                    <a href={process.env.PUBLIC_URL + './static/StageLink_Whitepaper-1.pdf'} className='mt-5 cursor-pointer flex text-base bg-blue-500 bg-opacity-60 hover:bg-opacity-100 active:bg-red-500 rounded-lg p-2 px-4 text-white font-semibold w-max mt-5 mx-auto'><code>Download whitepaper</code></a>
+                <div className='box bg-black p-5 rounded-xl bg-opacity-50 px-5 text-center justify-center'>
+                    <a href={process.env.PUBLIC_URL + './static/StageLink_Whitepaper-1.pdf'} className='mt-5 cursor-pointer flex text-base bg-blue-500 bg-opacity-60 hover:bg-opacity-100 active:bg-red-500 rounded-lg p-2 px-4 text-center text-white font-semibold w-full md:w-max mt-5 mx-auto'><code>View Whitepaper</code></a>
                 </div>
             </div>
         </div>

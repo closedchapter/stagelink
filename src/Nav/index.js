@@ -45,11 +45,11 @@ const Bar = () => {
                     <a className='h-full filter invert opacity-20 hover:opacity-100' href={"https://twitter.com/StageLinkToken"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/twitter.png").default} alt="" />
                     </a>
-                    <a className='h-full filter invert opacity-20 hover:opacity-100' href={"https://www.instagram.com/stagelinkofficial/"} target="_blank" rel="nofollow noopener noreferrer">
-                        <img className="h-full" src={require("./images/instagram.png").default} alt="" />
-                    </a>
                     <a className='h-full filter invert opacity-20 hover:opacity-100' href={"https://youtube.com/channel/UCkOd1E_ldWkIq2xdpbtVWsA"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/youtube.png").default} alt="" />
+                    </a>
+                    <a className='h-full filter invert opacity-20 hover:opacity-100' href={"https://www.instagram.com/stagelinkofficial/"} target="_blank" rel="nofollow noopener noreferrer">
+                        <img className="h-full" src={require("./images/instagram.png").default} alt="" />
                     </a>
                     <a className='h-full filter invert opacity-20 hover:opacity-100' href={"https://www.reddit.com/r/StageLink/"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/reddit.png").default} alt="" />
@@ -99,11 +99,11 @@ const Footer = () => {
                     <a className='h-full filter invert' href={"https://twitter.com/StageLinkToken"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/twitter.png").default} alt="" />
                     </a>
-                    <a className='h-full filter invert' href={"https://www.instagram.com/stagelinkofficial/"} target="_blank" rel="nofollow noopener noreferrer">
-                        <img className="h-full" src={require("./images/instagram.png").default} alt="" />
-                    </a>
                     <a className='h-full filter invert' href={"https://youtube.com/channel/UCkOd1E_ldWkIq2xdpbtVWsA"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/youtube.png").default} alt="" />
+                    </a>
+                    <a className='h-full filter invert' href={"https://www.instagram.com/stagelinkofficial/"} target="_blank" rel="nofollow noopener noreferrer">
+                        <img className="h-full" src={require("./images/instagram.png").default} alt="" />
                     </a>
                     <a className='h-full filter invert' href={"https://www.reddit.com/r/StageLink/"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/reddit.png").default} alt="" />
