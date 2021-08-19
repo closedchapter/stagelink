@@ -12,7 +12,7 @@ const Bar = () => {
     const [modal, setModal] = useState(false);
     
     function NavListItems() {
-        const NavArray = [{name:"Purpose", link:"purpose"},{name:"Tokenomics", link:"tokenomics"},{name:"Ecosystem and Benefits", link:"ecosystem-and-benefits"},{name:"How to buy stagelink", link:"how-to-buy"},{name:"Roadmap", link:"roadmap"}];
+        const NavArray = [{name:"Purpose", link:"purpose"},{name:"Tokenomics", link:"tokenomics"},{name:"Ecosystem and Benefits", link:"ecosystem-and-benefits"},{name:"How to buy", link:"how-to-buy"},{name:"Roadmap", link:"roadmap"}];
     
         return NavArray.map((item, index) => <Go onClick={() => setModal(false)} to={item.link} spy={true} smooth={true} key={index} className='uppercase cursor-pointer select-none appearance-none font-bold transition duration-150 ease-in-out opacity-30 hover:opacity-100'>{item.name}</Go>);
       }
