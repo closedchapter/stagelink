@@ -47,12 +47,12 @@ const Purpose = () => {
                     <div className='text-base text-normal mt-5 leading-relaxed'>Our goal is to decentralise the sports entertainment industry by implementing the Pay-Per-View system and hosting professional & influencer boxing exhibition that can be enjoyed by fans from all over the world.</div>
                 </div>
             </div>
-            <div className='h-72 md:h-96 relative z-10'>
-                <div className='absolute w-full h-full bg-gradient-to-t from-black via-transparent to-transparent z-10' />
-                <img className='absolute left-0 h-full object-cover z-0' src={require("./images/Anthony.png").default} alt=''/>
-                <img className='absolute right-0 h-full object-cover flip z-0' src={require("./images/Tyson.png").default} alt=''/>
+            <div className='h-80 md:h-96 relative z-0 -m-7 md:w-1/2 mx-auto'>
+                <div className='transform scale-125 absolute w-full h-full bg-gradient-to-t from-black via-transparent to-transparent z-10' />
+                <img className='transform scale-125 absolute left-0 h-full object-cover z-0' src={require("./images/Anthony.png").default} alt=''/>
+                <img className='transform scale-125 origin-left absolute right-0 h-full object-cover z-0' src={require("./images/Tyson.png").default} alt=''/>
             </div>
-            <div className='flex flex-col text-sm text-white text-opacity-90 font-normal rounded-2xl bg-gray-900 p-10 text-left mb-20'>
+            <div className='flex flex-col text-sm text-white text-opacity-90 font-normal rounded-2xl bg-gray-900 p-10 text-left mb-20 overflow-hidden relative z-10'>
             <div className='text-lg font-extrabold text-center md:text-left'>Out with the <div className='inline-block text-blue-500'>OLD</div> and in with the <div className='inline-block text-blue-500'>NEW.</div></div>
                 <div className='flex flex-col md:flex-row md:space-x-20'> 
                     <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>The old Pay-Per-View can only be bought through fiat which will be made more redundant as crypto becomes more prominent, however StageLink offers the cryptocurrency option.</div>

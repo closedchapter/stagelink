@@ -27,11 +27,6 @@
   border-left: 2px solid #1f7deb;
 }
 
-.flip {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
 a,
 html {
   font-family: 'Inter', sans-serif;
