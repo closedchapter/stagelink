@@ -101,7 +101,7 @@ const Tokenomics = () => {
         <div id="tokenomics" className='bg-black bg-opacity-95 p-7 text-white text-opacity-90 font-normal'>
             <div className='text-4xl font-extrabold mt-16'>Tokenomics.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
-                <div className='box mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
+                <div className='box-a mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
                     <div className='text-xl font-extrabold'>Wallet Distribution</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'></div>
                     <div className='text-base text-normal ml-5 mt-5'>
@@ -113,7 +113,7 @@ const Tokenomics = () => {
                         <li><b>10%</b> distributed to <b>marketing wallet</b>.</li>
                     </div>
                 </div>
-                <div className='box mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
+                <div className='box-a mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
                     <div className='text-xl font-extrabold'>Transaction Fee (12%)</div>
                     <div className='text-base text-normal ml-5 mt-5'>
                     <li><b>3%</b> rewarded to <b>holders</b>.</li>
