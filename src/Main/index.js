@@ -47,7 +47,7 @@ const Purpose = () => {
                     <div className='text-base text-normal mt-5 leading-relaxed'>Our goal is to decentralise the sports entertainment industry by implementing the Pay-Per-View system and hosting professional & influencer boxing exhibition that can be enjoyed by fans from all over the world.</div>
                 </div>
             </div>
-            <div className='h-80 md:h-96 relative z-0 -m-7 md:w-1/2 mx-auto'>
+            <div className='h-72 md:h-96 relative z-0 mx-auto md:w-2/3'>
                 <div className='transform scale-125 absolute w-full h-full bg-gradient-to-t from-black via-transparent to-transparent z-10' />
                 <img className='transform scale-125 absolute left-0 h-full object-cover z-0' src={require("./images/Anthony.png").default} alt=''/>
                 <img className='transform scale-125 origin-left absolute right-0 h-full object-cover z-0' src={require("./images/Tyson.png").default} alt=''/>
