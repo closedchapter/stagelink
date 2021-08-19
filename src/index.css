@@ -6,12 +6,18 @@
 
 .box {
   border-top: 2px solid #1f7deb;
-  border-left: 2px solid #f3371e;
+  border-left: 2px solid #1f7deb;
+  /* border-left: 2px solid #f3371e; */
 }
 
 .box-a {
   border-top: 2px solid #1f7deb;
   border-left: 2px solid #1f7deb;
+}
+
+.box-roadmap {
+  border-top: 2px solid #1f7deb;
+  border-left: 2px solid #f3371e;
 }
 
 a,
