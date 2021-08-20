@@ -81,7 +81,7 @@ const Ecosystem = () => {
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>Joining us rewards you.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>All holders of our utility token are rewarded generously because we understand how important your support is. Becoming a holder means you lose nothing and gain everything.</div>
-                    <div className='box-a text-base text-normal mt-5 bg-white bg-opacity-0 text-gray-100 rounded p-4 space-y-5 shadow-xl'>
+                    <div className='text-base text-normal mt-5 bg-white bg-opacity-0 text-gray-100 rounded p-4 space-y-5 shadow-xl'>
                         <div className='flex flex-col mb-2'><b className='text-xl'>10%</b><div>towards <b>holders</b> from merch profit.</div></div>
                         <div className='flex flex-col mb-2'><b className='text-xl'>10%</b><div>reinvested into token from merch profit.</div></div>
                         <div className='flex flex-col mb-2'><b className='text-xl'>5%</b><div>towards <b>holders</b> from event profit.</div></div>
@@ -105,7 +105,7 @@ const Ecosystem = () => {
 
 const Tokenomics = () => {
     return (
-        <div id="tokenomics" className='bg-black bg-opacity-95 p-7 text-white text-opacity-90 font-normal'>
+        <div id="tokenomics" className='bg-gray-900 bg-opacity-95 p-7 text-white text-opacity-90 font-normal'>
             <div className='text-4xl font-extrabold mt-16'>Tokenomics.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='box-a mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
@@ -221,13 +221,13 @@ function SectionListItems() {
 
 const Roadmap = () => {
     return (
-        <div id="roadmap" className='bg-black bg-opacity-95 text-white p-7 text-white text-opacity-95 font-normal'>
+        <div id="roadmap" className='bg-black text-white p-7 text-white text-opacity-95 font-normal'>
             <div className='text-4xl font-extrabold mt-16'>Roadmap.</div>
             <div className='grid grid-flow-row grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4 mt-16 mb-10'>
                 <SectionListItems/>
             </div>
             <div className='container mx-auto px-10'>
-                <div className='box-full bg-black p-5 rounded-xl bg-opacity-50 px-5 text-center justify-center w-max mx-auto'>
+                <div className='bg-black p-5 rounded-xl bg-opacity-50 px-5 text-center justify-center w-max mx-auto'>
                     <a href={process.env.PUBLIC_URL + './static/StageLink_Whitepaper-1.pdf'} className='cursor-pointer flex text-base bg-blue-500 bg-opacity-60 hover:bg-opacity-100 active:bg-red-500 rounded-lg p-2 px-4 text-center text-white font-semibold w-full md:w-max mt-5 mx-auto'><code>View Whitepaper</code></a>
                 </div>
             </div>
