@@ -24,9 +24,8 @@ const Landing = () => {
                     </Link>
                 </div>
             </div>
-            <div className='absolute h-full w-full object-cover bkg-y'>
-                <img className='absolute hidden h-full w-full object-cover z-0' src={require("./images/bgimg.jpg").default} alt=''/>
-                <div className='bkg'><Slideshow/></div>
+            <div className='absolute h-full w-full bkg-y'>
+                <Slideshow/>
             </div>
             <div className='absolute h-full w-full object-cover bg-gradient-to-b from-transparent to-black'/>
         </div>
