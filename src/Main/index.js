@@ -25,7 +25,7 @@ const Landing = () => {
                 </div>
             </div>
             <div className='absolute h-full w-full bkg-y'>
-                <Slideshow/>
+                <div className='transform -translate-y-8'><Slideshow/></div>
             </div>
             <div className='absolute h-full w-full object-cover bg-gradient-to-b from-transparent to-black'/>
         </div>
