@@ -29,7 +29,7 @@ const Slidehow = () => {
     config: config.molasses,
   })
   console.log(slides)
-  useEffect(() => void setInterval(() => set(state => (state + 1) % 7), 4000), [])
+  useEffect(() => void setInterval(() => set(state => (state + 1) % 7), 2500), [])
   return transitions?.map(({ item, props, key }) => (
     <animated.div
       key={key}
