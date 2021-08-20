@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Pop from './PopUp'
 import data from './data.json'
+import Slideshow from './carousel.js'
+
 
 const NavSVG = <svg class="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 3l7 7-7 7"></path></svg>
 const Landing = () => {
@@ -23,15 +25,14 @@ const Landing = () => {
                 </div>
             </div>
             <div className='absolute h-full w-full object-cover bkg-y'>
-                <img className='absolute h-full w-full object-cover z-0 bkg' src={require("./images/bgimg.jpg").default} alt=''/>
+                <img className='absolute hidden h-full w-full object-cover z-0' src={require("./images/bgimg.jpg").default} alt=''/>
+                <div className='bkg'><Slideshow/></div>
             </div>
             <div className='absolute h-full w-full object-cover bg-gradient-to-b from-transparent to-black'/>
         </div>
     )
 }
 
-
-// <div className='text-4xl flex font-extrabold mt-20 mb-10 z-10 relative  overflow-hidden py-20 -m-7 relative my-auto container mx-auto md:px-52 '>Together, we’re taking over a multi-billion dollar industry.</div>
 
 const Purpose = () => {
     return (
@@ -67,6 +68,7 @@ const Purpose = () => {
     )
 }
 
+
 const Ecosystem = () => {
     return (
         <div id="ecosystem-and-benefits" className='bg-black text-white p-7 text-white text-opacity-90 font-normal overflow-hidden'>
@@ -101,6 +103,7 @@ const Ecosystem = () => {
     )
 }
 
+
 const Tokenomics = () => {
     return (
         <div id="tokenomics" className='bg-black bg-opacity-95 p-7 text-white text-opacity-90 font-normal'>
@@ -131,6 +134,7 @@ const Tokenomics = () => {
         </div>
     )
 }
+
 
 const HowTo = () => {
     // return a promise
@@ -215,6 +219,7 @@ function SectionListItems() {
     return data.map((section) => <div className='p-5 box rounded-xl bg-black bg-opacity-50 flex flex-col' key={section}><div className='text-lg font-bold'>{section.name}</div><div className=''><ContentListItems info={section.section}/></div></div>);
   }
 
+
 const Roadmap = () => {
     return (
         <div id="roadmap" className='bg-black bg-opacity-95 text-white p-7 text-white text-opacity-95 font-normal'>
@@ -230,6 +235,7 @@ const Roadmap = () => {
         </div>
     )
 }
+
 
 const Main = () => {
     return (
