@@ -9,7 +9,7 @@ import * as Nav from './Nav'
 
 function App() {
   return (
-    <div>
+    <div className='bg-black overflow-hidden'>
       <Nav.Bar />
         <Switch>
           <Route path='/' exact component={Main} />

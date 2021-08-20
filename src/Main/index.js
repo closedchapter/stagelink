@@ -35,7 +35,7 @@ const Landing = () => {
 
 const Purpose = () => {
     return (
-        <div id="purpose" className='bg-black text-white p-7 pt-0 text-center overflow-hidden relative z-20'>
+        <div id="purpose" className='bg-black text-white p-7 pt-0 text-center relative z-20'>
             <div className='bg-black bg-opacity-30 rounded-xl z-10 text-4xl font-extrabold container mx-auto md:px-52 p-5'>Together, we’re taking over a <div className='text-red-600 inline-block'>multi-billion</div> dollar industry.</div>
             <div className='flex flex-col mb-20 container mx-auto md:w-1/2 text-white text-opacity-90 font-normal'>
                 <div className='mt-12 flex-1'>
@@ -105,7 +105,7 @@ const Ecosystem = () => {
 
 const Tokenomics = () => {
     return (
-        <div id="tokenomics" className='bg-gray-900 bg-opacity-95 p-7 text-white text-opacity-90 font-normal'>
+        <div id="tokenomics" className='overflow-hidden md:rounded-xl bg-gray-900 bg-opacity-95 p-7 text-white text-opacity-90 font-normal'>
             <div className='text-4xl font-extrabold mt-16'>Tokenomics.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='box-a mt-12 flex-1 bg-black bg-opacity-40 p-5 rounded-lg'>
@@ -184,7 +184,7 @@ function copyToClipboard(textToCopy) {
     }
 
     return (
-        <div id="how-to-buy" className='bg-gray-900 text-gray-200 p-7 text-white text-opacity-95 font-normal'>
+        <div id="how-to-buy" className='overflow-hidden md:rounded-xl bg-gray-900 text-gray-200 p-7 text-white text-opacity-95 font-normal'>
             <div className={animation + ' fixed inset-x-0 container mx-auto px-10 md:px-32 bottom-16 z-50'}><Pop/></div>
             <div className='text-4xl font-extrabold mt-16'>How to buy STAGELINK now.</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
