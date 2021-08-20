@@ -49,7 +49,7 @@ const Purpose = () => {
             </div>
             <div className='h-72 md:h-96 relative z-0 mx-auto'>
                 <div className='transform scale-125 absolute w-full h-full bg-gradient-to-t from-black via-transparent to-transparent z-10' />
-                <img className='transform scale-105 absolute left-0 h-full object-cover z-0' src={require("./images/Anthony.png").default} alt=''/>
+                <img className='transform scale-125 filter contrast-125 absolute left-0 h-full object-cover z-0' src={require("./images/Anthony.png").default} alt=''/>
                 <img className='transform scale-125 origin-left absolute right-0 h-full object-cover z-0' src={require("./images/Tyson.png").default} alt=''/>
             </div>
             <div className='flex flex-col text-sm text-white text-opacity-90 font-normal rounded-2xl bg-gray-900 p-10 text-left mb-20 overflow-hidden relative z-10'>
