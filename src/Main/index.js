@@ -40,7 +40,7 @@ const Purpose = () => {
             <div className='flex flex-col mb-20 container mx-auto md:w-1/2 text-white text-opacity-90 font-normal'>
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>The world's first sport token, with real-life utility, using blockchain technology.</div>
-                    <div className='text-base text-normal mt-5 leading-relaxed'><b>STAGELINK</b> is the latest pioneering utility token built to disrupt the exploitative PPV industry, and replace it with the stagelink ecosystem that rewards its holders via different avenues.</div>
+                    <div className='text-base text-normal mt-5 leading-relaxed'><b>STAGELINK</b> is the latest pioneering utility token built to disrupt the PPV industry while replacing it with the stagelink ecosystem that rewards its holders via different avenues.</div>
                 </div>
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>...</div>
@@ -55,12 +55,16 @@ const Purpose = () => {
             <div className='flex flex-col text-sm text-white text-opacity-90 font-normal rounded-2xl bg-gray-900 p-10 text-left mb-20 overflow-hidden relative z-10'>
             <div className='text-lg font-extrabold text-center md:text-left'>Out with the <div className='inline-block text-blue-500'>OLD</div> and in with the <div className='inline-block text-blue-500'>NEW.</div></div>
                 <div className='flex flex-col md:flex-row md:space-x-20'> 
-                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>The old Pay-Per-View can only be bought through fiat which will be made more redundant as crypto becomes more prominent, however StageLink offers the cryptocurrency option.</div>
-                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>Pay-Per-View is bought for entertainment purposes, however, often the fights can be underwhelming and leave a sour taste when matches are quickly concluded. Buying from StageLink will provide other benefits so the customer is always left happy.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg hidden'>The old Pay-Per-View can only be bought through fiat which will be made more redundant as crypto becomes more prominent, however StageLink offers the cryptocurrency option.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg hidden'>Pay-Per-View is bought for entertainment purposes, however, often the fights can be underwhelming and leave a sour taste when matches are quickly concluded. Buying from StageLink will provide other benefits so the customer is always left happy.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>The PPV (Pay per view) system has become a redundant service in the 21st century. The emergence of cryptocurrencies, in particular StageLink, has provided a new alternative to this outdated system.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>PPV’s sole utility as a payment service is a disadvantageous feature that StageLink seeks to improve upon. Buying from StageLink is rewarding and provides many benefits unlike standard PPV.</div>
                 </div>
                 <div className='flex flex-col md:flex-row md:space-x-20'> 
-                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>The current Pay-Per-View is over-priced due the monopolisation of the industry, we will charge fairer prices so that the common working man can afford to see these fights as we understand many people aspire to be able to watch these fights live and in person at least once in their life.</div>
-                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>Combat sports fighters often get taken advantage of due to the aforementioned monopolisation, lesser known fighters cannot advocate for themselves to receive a fair pay. StageLink wishes to see equal pay and opportunities in this industry.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg hidden'>The current Pay-Per-View is over-priced due the monopolisation of the industry, we will charge fairer prices so that the common working man can afford to see these fights as we understand many people aspire to be able to watch these fights live and in person at least once in their life.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg hidden'>Combat sports fighters often get taken advantage of due to the aforementioned monopolisation, lesser known fighters cannot advocate for themselves to receive a fair pay. StageLink wishes to see equal pay and opportunities in this industry.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>PPV at its current state is over-priced, exploitive and incompatible with the modern sports culture. StageLink aims to be a fairer model that is built on the foundations of billions of sports fans from all corners of the world.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>Fighters within combat sports are routinely exploited for the purposes of making a profit. StageLink is not about profit or increasing revenue. Our ethical and moral values are such that we are looking to introduce equal pay and opportunities across the entire industry.</div>
                 </div>
             </div>
         </div>
