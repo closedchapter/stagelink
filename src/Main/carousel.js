@@ -8,7 +8,7 @@ import LoganFight from './images/LoganFight.jpeg'
 import Pacquiao from './images/Pacquiao.jpeg'
 import ConorVsKhabib from './images/ConorVsKhabib.jpeg'
 
-const slides = [
+var slides = [
   { id: 0, url: AliFight },
   { id: 1, url: BlackGuy },
   { id: 2, url: AliWin },
@@ -18,6 +18,8 @@ const slides = [
   { id: 6, url: ConorVsKhabib },
 ]
 
+slides.sort(() => Math.random() - 0.5)
+
 const Slidehow = () => {
   const [index, set] = useState(0)
   const transitions = useTransition(slides[index], item => item.id, {
@@ -26,6 +28,7 @@ const Slidehow = () => {
     leave: { opacity: 0 },
     config: config.molasses,
   })
+  console.log(slides)
   useEffect(() => void setInterval(() => set(state => (state + 1) % 7), 4000), [])
   return transitions?.map(({ item, props, key }) => (
     <animated.div
