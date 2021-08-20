@@ -44,7 +44,7 @@ const Purpose = () => {
                 </div>
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>...</div>
-                    <div className='text-base text-normal mt-5 leading-relaxed'>Our goal is to decentralise the sports entertainment industry by implementing cryptocurrency into the PPV system. StageLink will also be hosting professional/influencer boxing events matches that can be enjoyed by fans from all over the world.</div>
+                    <div className='text-base text-normal mt-5 leading-relaxed'>Our goal is to decentralise the sports entertainment industry by implementing cryptocurrency into the pay-per-view system. StageLink will also be hosting professional & influencer exhibition matches that can be enjoyed by fans from all over the world.</div>
                 </div>
             </div>
             <div className='h-72 md:h-96 relative z-0 mx-auto'>
@@ -56,7 +56,7 @@ const Purpose = () => {
             <div className='text-lg font-extrabold text-center md:text-left'>Out with the <div className='inline-block text-blue-500'>OLD</div> and in with the <div className='inline-block text-blue-500'>NEW</div></div>
                 <div className='flex flex-col md:flex-row md:space-x-20'> 
                     <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>Currently PPV events can only be purchased through fiat which will be made more redundant as crypto becomes more prominent, however StageLink offers the cryptocurrency payment option aswell as fiat.</div>
-                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>PPV events are bought for entertainment purposes, however, often the fights can be underwhelming and leave a sour taste when matches are quickly concluded. At StageLink we will provide other benefits so the customer is always left happy.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>PPV events are purchased for entertainment purposes, however, often the fights can be underwhelming and leave a sour taste when matches are quickly concluded. At StageLink we will provide other benefits so the customer is always left happy.</div>
                     <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg hidden'>The PPV (Pay per view) system has become a redundant service in the 21st century. The emergence of cryptocurrencies, in particular StageLink, has provided a new alternative to this outdated system.</div>
                     <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg hidden'>PPV’s sole utility as a payment service is a disadvantageous feature that StageLink seeks to improve upon. Buying from StageLink is rewarding and provides many benefits unlike standard PPV.</div>
                 </div>
@@ -85,7 +85,7 @@ const Ecosystem = () => {
                 <div className='mt-12 flex-1'>
                     <div className='text-xl font-extrabold'>Joining us rewards you.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>All holders of our utility token are rewarded generously because we understand how important your support is. Becoming a holder means you lose nothing and gain everything.</div>
-                    <div className='text-base text-normal mt-5 bg-white bg-opacity-0 text-gray-100 rounded p-4 space-y-5 shadow-xl'>
+                    <div className='text-base text-normal mt-5 bg-white bg-opacity-0 text-gray-100 rounded space-y-5 shadow-xl'>
                         <div className='flex flex-col mb-2'><b className='text-xl'>10%</b><div>towards holders from merch profit.</div></div>
                         <div className='flex flex-col mb-2'><b className='text-xl'>10%</b><div>reinvested into token from merch profit.</div></div>
                         <div className='flex flex-col mb-2'><b className='text-xl'>5%</b><div>towards holders from event profit.</div></div>
@@ -94,7 +94,7 @@ const Ecosystem = () => {
                 </div>
                 <div className='mt-12 flex-1 overflow-visible'>
                     <div className='text-xl font-extrabold'>Loyalty rewards</div>
-                    <div className='text-base text-normal mt-5 leading-relaxed'>We value our holders so to show our appreciation we are the first token to implement the loyalty rewards, holders that don't sell their token will get 25% of their purchasing fees weekly. 5% of the initial supply is allocated in a wallet to the loyalty rewards.</div>
+                    <div className='text-base text-normal mt-5 leading-relaxed'>We value our holders so to show our appreciation we are the first token to implement the loyalty rewards, holders that don't sell their tokens will get 25% of their purchasing fee back weekly.</div>
                     <div className='h-80 overflow-hidden relative'>
                         <div className='bg-gradient-to-r from-black via-transparent to-transparent absolute w-full h-full z-10'/>
                         <div className='bg-gradient-to-l from-black via-transparent to-transparent absolute w-full h-full z-10'/>
