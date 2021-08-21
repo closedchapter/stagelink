@@ -13,12 +13,16 @@ const Landing = () => {
                 <div className='title my-auto text-3xl md:text-5xl lg:text-7xl font-semibold bg-black bg-opacity-40 rounded-lg p-2 uppercase'>Setting the <div className='inline-block text-red-500'>stage</div> for the revolution of <div className='inline-block text-red-500'>sports</div></div>
             </div>
             <div className='flex relative z-20'>
-                <div className='mb-auto bg-black bg-opacity-40 rounded-xl p-5'>
-                    <a className='flex justify-center align-center items-center py-3 px-6 select-none text-black text-lg font-bold rounded-lg bg-white hover:bg-gray-400 active:text-white active:bg-gray-800' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
-                        <div className='mr-7'>Buy Now</div>
-                        <div className='w-4'>{NavSVG}</div>
+                <div className='mb-auto bg-black bg-opacity-40 rounded-3xl p-5'>
+                    <a className='w-max bg-white p-4 px-6 flex items-end mx-auto text-black font-bold rounded-2xl active:bg-gray-800 active:text-white' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
+                        <div className='flex-1'>Buy Now</div>
+                        <div className='w-3.5 ml-2 pb-1'>{NavSVG}</div>
                     </a>
-                    <Link to='/live' className='flex mt-5 justify-center align-center items-center py-3 px-6 select-none text-white text-lg font-semibold rounded-sm ring-2 ring-white hover:bg-gray-400 active:text-white active:bg-gray-800'>
+                    <a className='my-3  w-max bg-white p-4 px-6 flex items-end mx-auto text-black font-bold rounded-2xl active:bg-gray-800 active:text-white' href={"https://t.me/StageLink"} target="_blank" rel="nofollow noopener noreferrer">
+                        <div className='flex-1'>Join Community</div>
+                        <div className='w-3.5 ml-2 pb-1'>{NavSVG}</div>
+                    </a>
+                    <Link to='/live' className='w-max border-2 border-white p-4 px-6 flex items-end mx-auto text-white font-bold rounded-2xl active:bg-white active:text-black'>
                         <div className='mr-7'>View Upcoming</div>
                         <div className='w-4'>{NavSVG}</div>
                     </Link>
@@ -83,7 +87,7 @@ const Ecosystem = () => {
             </div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-'>
                 <div className='mt-12 flex-1'>
-                    <div className='text-xl font-extrabold'>Joining us rewards you.</div>
+                    <div className='text-xl font-extrabold'>Joining us rewards you</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>All holders of our utility token are rewarded generously because we understand how important your support is. Becoming a holder means you lose nothing and gain everything.</div>
                     <div className='text-base text-normal mt-5 bg-white bg-opacity-0 text-gray-100 rounded space-y-5 shadow-xl'>
                         <div className='flex flex-col mb-2'><b className='text-xl'>10%</b><div>towards holders from merch profit.</div></div>
@@ -94,7 +98,7 @@ const Ecosystem = () => {
                 </div>
                 <div className='mt-12 flex-1 overflow-visible'>
                     <div className='text-xl font-extrabold'>Loyalty rewards</div>
-                    <div className='text-base text-normal mt-5 leading-relaxed'>We value our holders so to show our appreciation we are the first token to implement the loyalty rewards, holders that don't sell their tokens will get 25% of their purchasing fee back weekly.</div>
+                    <div className='text-base text-normal mt-5 leading-relaxed'>We value our holders, so to show our appreciation we are the first token to implement the loyalty rewards, holders that don't sell their tokens will recieve 25% of their purchasing fees back every week.</div>
                     <div className='h-80 overflow-hidden relative'>
                         <div className='bg-gradient-to-r from-black via-transparent to-transparent absolute w-full h-full z-10'/>
                         <div className='bg-gradient-to-l from-black via-transparent to-transparent absolute w-full h-full z-10'/>
@@ -193,7 +197,7 @@ function copyToClipboard(textToCopy) {
             <div className='text-4xl font-extrabold mt-16'>How to buy STAGELINK now</div>
             <div className='flex flex-col md:flex-row md:space-x-20 mb-20'>
                 <div className='mt-12 flex-1'>
-                    <div className='text-xl font-extrabold'>Setup your digital wallet.</div>
+                    <div className='text-xl font-extrabold'>Setup your digital wallet</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'>Set up your <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://metamask.io/"} target="_blank" rel="nofollow noopener noreferrer">MetaMask currency wallet</a> and configure it to the Binance Smart Chain Network. If you're not sure on how to do this, <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.bsc.news/post/connecting-metamask-wallet-to-the-binance-smart-chain"} target="_blank" rel="nofollow noopener noreferrer">here's a handy guide.</a></div><div className='text-base text-normal mt-5 leading-relaxed'><b>You’ll need to purchase STAGELINK coins with BNB (Smart Chain).</b> Make sure you have enough BNB coins. If not, you can buy BNB on cryptocurrency exchanges like <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://www.binance.com/"} target="_blank" rel="nofollow noopener noreferrer">Binance</a> and then send it over to your MetaMask wallet. <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://crypto-explained.com/services/send-bnb-coin-to-binance-smart-chain-on-metamask/"} target="_blank" rel="nofollow noopener noreferrer">Here’s a guide on how you can do so quickly and safely</a>.</div>
                     <div className='box-a flex flex-col min-h mt-10  text-black rounded-3xl bg-black bg-opacity-20 p-5'>
                         <code className='text-base text-normal text-opacity-40 font-semibold leading-relaxed text-gray-200'>Contract address</code>
@@ -203,8 +207,8 @@ function copyToClipboard(textToCopy) {
                     </div>
                 </div>
                 <div className='mt-12 flex-1'>
-                    <div className='text-xl font-extrabold'>Make your first purchase.</div>
-                    <div className='text-base text-normal mt-5 leading-relaxed'>After setting up your digital wallet and topping it up with enough BNB (Smart Chain), connect your wallet to <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://pancakeswap.finance/swap"} target="_blank" rel="nofollow noopener noreferrer">PancakeSwap</a>. Connect your wallet by <b>using the connect button.</b> (If you're on mobile - you may <b>need to use WalletConnect).</b></div><div className='text-base text-normal mt-5 leading-relaxed'>From here, <b>paste in the STAGELINK contract address</b> and add it to PancakeSwap. Put in the amount you wish to swap (ensure that slippage is set to "12/13%") and <b>tap on “Swap”.</b> After the swap, MetaMask will ask you to confirm the transaction.</div>
+                    <div className='text-xl font-extrabold'>Make your first purchase</div>
+                    <div className='text-base text-normal mt-5 leading-relaxed'>After setting up your digital wallet and topping it up with enough BNB (Smart Chain), connect your wallet to <a className='text-blue-600 hover:underline active:text-indigo-800' href={"https://pancakeswap.finance/swap"} target="_blank" rel="nofollow noopener noreferrer">PancakeSwap</a>. Connect your wallet by <b>using the connect button.</b> (If you're on mobile - you may <b>need to use WalletConnect).</b></div><div className='text-base text-normal mt-5 leading-relaxed'>From here, <b>paste in the STAGELINK contract address</b> and add it to PancakeSwap. Put in the amount you wish to swap (ensure that slippage is set to 12%-13%) and <b>tap on “Swap”.</b> After the swap, MetaMask will ask you to confirm the transaction.</div>
                     <div className='text-base text-normal mt-5 leading-relaxed'><b>Congratulations!</b> You are now a holder of <b>STAGELINK</b> and a <b>certified</b> member of the community!</div>
                 </div>
             </div>
@@ -220,7 +224,7 @@ function ContentListItems(info) {
   }
 
 function SectionListItems() {
-    return data.map((section) => <div className='p-5 box rounded-xl bg-black bg-opacity-50 flex flex-col' key={section}><div className='text-lg font-bold'>{section.name}</div><div className=''><ContentListItems info={section.section}/></div></div>);
+    return data.map((section) => <div className='p-5 box rounded-xl bg-black bg-opacity-50 flex flex-col' key={section}><div className='text-lg font-bold underline-bitch pb-2'>{section.name}</div><ul className='list-outside list-disc'><ContentListItems info={section.section}/></ul></div>);
   }
 
 

@@ -123,3 +123,7 @@ code {
   background-position: center;
   will-change: opacity;
 }
+
+.underline-bitch {
+  border-bottom: 2px solid #1f7deb;
+}

@@ -40,7 +40,7 @@
         "name":"Stage 2",
         "section":[
             {
-                "objective":"Website/Whitepaper redesign & frequent updates",
+                "objective":"Website/Whitepaper redesign",
                 "done?":false
             },
             {
@@ -81,11 +81,11 @@
                 "done?":false
             },
             {
-                "objective":"Expansion into NFT Marketplace",
+                "objective":"Introducton of an NFT Marketplace",
                 "done?":false
             },
             {
-                "objective":"Development of app",
+                "objective":"Development of the StageLink app",
                 "done?":false
             }
         ]
@@ -98,15 +98,15 @@
                 "done?":false
             },
             {
-                "objective":"Introducton of betting on STAGELINK platform",
+                "objective":"Introducton of betting on the StageLink platform",
                 "done?":false
             },
             {
-                "objective":"Exclusive NFT events",
+                "objective":"Hosting the first official StageLink PPV event",
                 "done?":false
             },
             {
-                "objective":"Inital host of STAGELINK event",
+                "objective":"Exclusive event NFTs",
                 "done?":false
             }
         ]
