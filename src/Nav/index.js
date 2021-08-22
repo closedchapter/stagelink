@@ -43,21 +43,24 @@ const Bar = () => {
                     <code className='text-white '>or</code>
                     <a href={process.env.PUBLIC_URL + './static/StageLink_Whitepaper-1.pdf'} className='cursor-pointer flex text-base bg-white bg-opacity-60 hover:bg-opacity-100 active:bg-green-500 rounded-lg p-3 px-4 text-black font-semibold w-max'><code>Download Whitepaper</code></a>
                 </div>
-                <div className='flex h-10 w-full justify-around mb-10 border-opacity-20'>
-                    <a className='h-full  opacity-20 hover:opacity-100' href={"https://t.me/StageLink"} target="_blank" rel="nofollow noopener noreferrer">
+                <div className='flex h-7 w-full justify-evenly mb-10 border-opacity-20'>
+                <a className={LogoClass} href={"https://t.me/StageLink"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/telegram.png").default} alt="" />
                     </a>
-                    <a className='h-full  opacity-20 hover:opacity-100' href={"https://twitter.com/StageLinkToken"} target="_blank" rel="nofollow noopener noreferrer">
+                    <a className={LogoClass} href={"https://twitter.com/StageLinkToken"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/twitter.png").default} alt="" />
                     </a>
-                    <a className='h-full  opacity-20 hover:opacity-100' href={"https://youtube.com/channel/UCkOd1E_ldWkIq2xdpbtVWsA"} target="_blank" rel="nofollow noopener noreferrer">
+                    <a className={LogoClass} href={"https://youtube.com/channel/UCkOd1E_ldWkIq2xdpbtVWsA"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/youtube.png").default} alt="" />
                     </a>
-                    <a className='h-full  opacity-20 hover:opacity-100' href={"https://www.instagram.com/stagelinkofficial/"} target="_blank" rel="nofollow noopener noreferrer">
+                    <a className={LogoClass} href={"https://www.instagram.com/stagelinkofficial/"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/instagram.png").default} alt="" />
                     </a>
-                    <a className='h-full  opacity-20 hover:opacity-100' href={"https://www.reddit.com/r/StageLink/"} target="_blank" rel="nofollow noopener noreferrer">
+                    <a className={LogoClass} href={"https://www.reddit.com/r/StageLink/"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/reddit.png").default} alt="" />
+                    </a>
+                    <a className={'h-full overflow-hidden rounded-md relative'} href={"https://sweepwidget.com/view/30206-tfd8lqcu"} target="_blank" rel="nofollow noopener noreferrer">
+                        <img className="h-full filter grayscale invert contrast-150 brightness-0" src={require("./images/sweepwidget.png").default} alt="" />
                     </a>
                 </div>
             </div>
@@ -93,28 +96,33 @@ const Bar = () => {
     )
 }
 
+const LogoClass = 'h-full filter grayscale invert overflow-hidden rounded-md'
+
 const Footer = () => {
     return (
         <div className='bg-black text-white'>
-            <div className='container mx-auto p-12 flex flex-col opacity-70'>
-                <div className='flex h-7 space-x-10 mt-5'>
-                    <a className='h-full' href={"https://t.me/StageLink"} target="_blank" rel="nofollow noopener noreferrer">
+            <div className='p-12 flex flex-col'>
+                <div className='flex h-7 justify-between mt-5 mx-auto w-full'>
+                    <a className={LogoClass} href={"https://t.me/StageLink"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/telegram.png").default} alt="" />
                     </a>
-                    <a className='h-full' href={"https://twitter.com/StageLinkToken"} target="_blank" rel="nofollow noopener noreferrer">
+                    <a className={LogoClass} href={"https://twitter.com/StageLinkToken"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/twitter.png").default} alt="" />
                     </a>
-                    <a className='h-full' href={"https://youtube.com/channel/UCkOd1E_ldWkIq2xdpbtVWsA"} target="_blank" rel="nofollow noopener noreferrer">
+                    <a className={LogoClass} href={"https://youtube.com/channel/UCkOd1E_ldWkIq2xdpbtVWsA"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/youtube.png").default} alt="" />
                     </a>
-                    <a className='h-full ' href={"https://www.instagram.com/stagelinkofficial/"} target="_blank" rel="nofollow noopener noreferrer">
+                    <a className={LogoClass} href={"https://www.instagram.com/stagelinkofficial/"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/instagram.png").default} alt="" />
                     </a>
-                    <a className='h-full ' href={"https://www.reddit.com/r/StageLink/"} target="_blank" rel="nofollow noopener noreferrer">
+                    <a className={LogoClass} href={"https://www.reddit.com/r/StageLink/"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/reddit.png").default} alt="" />
                     </a>
+                    <a className={'h-full overflow-hidden rounded-md relative'} href={"https://sweepwidget.com/view/30206-tfd8lqcu"} target="_blank" rel="nofollow noopener noreferrer">
+                        <img className="h-full filter grayscale invert contrast-150 brightness-0" src={require("./images/sweepwidget.png").default} alt="" />
+                    </a>
                 </div>
-                <div className='font-bold text-sm mt-10 text-center'>© 2021 STAGELINK. All Rights Reserved.</div>
+                <div className='font-bold text-sm mt-10 text-center opacity-40'>© 2021 STAGELINK. All Rights Reserved.</div>
             </div>
         </div>
     )
