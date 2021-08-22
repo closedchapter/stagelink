@@ -101,8 +101,8 @@ const LogoClass = 'h-full filter grayscale invert overflow-hidden rounded-md'
 const Footer = () => {
     return (
         <div className='bg-black text-white'>
-            <div className='p-12 flex flex-col'>
-                <div className='flex h-7 justify-between mt-5 mx-auto w-full'>
+            <div className='p-12 flex flex-col justify-center'>
+                <div className='flex h-7 justify-between md:w-1/3 mt-5 mx-auto w-full'>
                     <a className={LogoClass} href={"https://t.me/StageLink"} target="_blank" rel="nofollow noopener noreferrer">
                         <img className="h-full" src={require("./images/telegram.png").default} alt="" />
                     </a>
