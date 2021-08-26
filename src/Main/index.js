@@ -14,8 +14,8 @@ const Landing = () => {
             </div>
             <div className='flex relative z-20'>
                 <div className='mb-auto bg-black bg-opacity-40 rounded-3xl p-5'>
-                    <a className='w-max bg-white p-4 px-6 flex items-end mx-auto text-black font-bold rounded-2xl active:bg-gray-800 active:text-white' href={"https://pancakeswap.finance"} target="_blank" rel="nofollow noopener noreferrer">
-                        <div className='flex-1'>Buy Now</div>
+                    <a className='w-max bg-white p-4 px-6 flex items-end mx-auto text-black font-bold rounded-2xl active:bg-gray-800 active:text-white' href={"https://sweepwidget.com/view/30206-tfd8lqcu"} target="_blank" rel="nofollow noopener noreferrer">
+                        <div className='flex-1'>Enter Presale</div>
                         <div className='w-3.5 ml-2 pb-1'>{NavSVG}</div>
                     </a>
                     <a className='my-3  w-max bg-white p-4 px-6 flex items-end mx-auto text-black font-bold rounded-2xl active:bg-gray-800 active:text-white' href={"https://t.me/StageLink"} target="_blank" rel="nofollow noopener noreferrer">
