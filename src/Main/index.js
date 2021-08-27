@@ -15,7 +15,7 @@ const Landing = () => {
             <div className='flex relative z-20'>
                 <div className='mb-auto bg-black bg-opacity-40 rounded-3xl p-5'>
                     <a className='w-max bg-white p-4 px-6 flex items-end mx-auto text-black font-bold rounded-2xl active:bg-gray-800 active:text-white' href={"https://sweepwidget.com/view/30206-tfd8lqcu"} target="_blank" rel="nofollow noopener noreferrer">
-                        <div className='flex-1'>Join Whitesale</div>
+                        <div className='flex-1'>Join Whitelist</div>
                         <div className='w-3.5 ml-2 pb-1'>{NavSVG}</div>
                     </a>
                     <a className='my-3  w-max bg-white p-4 px-6 flex items-end mx-auto text-black font-bold rounded-2xl active:bg-gray-800 active:text-white' href={"https://t.me/StageLink"} target="_blank" rel="nofollow noopener noreferrer">
@@ -28,7 +28,7 @@ const Landing = () => {
                     </Link>
                 </div>
             </div>
-            <div className='absolute h-full w-full bkg-y transform translate-y-16'>
+            <div className='absolute h-full w-full bkg-y lg:transform -translate-y-16'>
                 <div className='transform -translate-y-8'><Slideshow/></div>
             </div>
             <div className='absolute h-full w-full object-cover bg-gradient-to-b from-transparent to-black'/>
