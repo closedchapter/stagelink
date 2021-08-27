@@ -15,7 +15,7 @@ const Landing = () => {
             <div className='flex relative z-20'>
                 <div className='mb-auto bg-black bg-opacity-40 rounded-3xl p-5'>
                     <a className='w-max bg-white p-4 px-6 flex items-end mx-auto text-black font-bold rounded-2xl active:bg-gray-800 active:text-white' href={"https://sweepwidget.com/view/30206-tfd8lqcu"} target="_blank" rel="nofollow noopener noreferrer">
-                        <div className='flex-1'>Enter Presale</div>
+                        <div className='flex-1'>Join Whitesale</div>
                         <div className='w-3.5 ml-2 pb-1'>{NavSVG}</div>
                     </a>
                     <a className='my-3  w-max bg-white p-4 px-6 flex items-end mx-auto text-black font-bold rounded-2xl active:bg-gray-800 active:text-white' href={"https://t.me/StageLink"} target="_blank" rel="nofollow noopener noreferrer">
@@ -28,7 +28,7 @@ const Landing = () => {
                     </Link>
                 </div>
             </div>
-            <div className='absolute h-full w-full bkg-y'>
+            <div className='absolute h-full w-full bkg-y transform translate-y-16'>
                 <div className='transform -translate-y-8'><Slideshow/></div>
             </div>
             <div className='absolute h-full w-full object-cover bg-gradient-to-b from-transparent to-black'/>
@@ -65,7 +65,7 @@ const Purpose = () => {
                     <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg hidden'>PPV’s sole utility as a payment service is a disadvantageous feature that StageLink seeks to improve upon. Buying from StageLink is rewarding and provides many benefits unlike standard PPV.</div>
                 </div>
                 <div className='flex flex-col md:flex-row md:space-x-20'> 
-                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>Currently PPV events are over-priced due to the monopolisation of the industry, we will charge fairer prices so that the average person can afford to see these fights as we understand many people aspire to be able to watch their favourite athletes fight live at least once in their life.</div>
+                    <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'> As it stands, PPV events are over-priced due to the monopolisation of the industry, we will charge fairer prices so that the average person can afford to see these fights as we understand many people aspire to be able to watch their favourite athletes fight live at least once in their life.</div>
                     <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg'>Athletes in the combat sports sector can often get taken advantage of due to the aforementioned monopolisation, lesser known fighters cannot advocate for themselves to receive a fair pay. StageLink wishes to see equal pay and opportunities in this industry.</div>
                     <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg hidden'>PPV at its current state is over-priced, exploitive and incompatible with the modern sports culture. StageLink aims to be a fairer model that is built on the foundations of billions of sports fans from all corners of the world.</div>
                     <div className='box flex-1 mt-8 bg-black bg-opacity-40 p-5 rounded-lg hidden'>Fighters within combat sports are routinely exploited for the purposes of making a profit. StageLink is not about profit or increasing revenue. Our ethical and moral values are such that we are looking to introduce equal pay and opportunities across the entire industry.</div>
