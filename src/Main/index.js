@@ -28,7 +28,7 @@ const Landing = () => {
                     </Link>
                 </div>
             </div>
-            <div className='absolute h-full w-full bkg-y lg:transform -translate-y-16'>
+            <div className='absolute h-full w-full bkg-y'>
                 <div className='transform -translate-y-8'><Slideshow/></div>
             </div>
             <div className='absolute h-full w-full object-cover bg-gradient-to-b from-transparent to-black'/>
@@ -247,7 +247,7 @@ const Roadmap = () => {
 
 const Main = () => {
     return (
-        <div className='pt-16 overflow-hidden'>
+        <div className='pt-16 md:pt-20 lg:pt-24 overflow-hidden'>
             <div className='bg-black'><Landing /></div>
             <div className='container mx-auto'>
                 <Purpose/>
