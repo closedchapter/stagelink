@@ -1,29 +1,129 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.title {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.box {
+  border-top: 2px solid #1f7deb;
+  border-left: 2px solid #1f7deb;
+  /* border-left: 2px solid #f3371e; */
+}
+
+.box-a {
+  border-top: 2px solid #1f7deb;
+  border-left: 2px solid #1f7deb;
+}
+
+.box-roadmap {
+  border-top: 2px solid #1f7deb;
+  border-left: 2px solid #f3371e;
+}
+
+.box-full {
+  border-top: 2px solid #1f7deb;
+  border-right: 2px solid #1f7deb;
+  border-bottom: 2px solid #1f7deb;
+  border-left: 2px solid #1f7deb;
+}
+
+a,
+html {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.neonText {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #f09,
+    0 0 82px #f09,
+    0 0 92px #f09,
+    0 0 102px #f09,
+    0 0 151px #f09;
+}
+
+.neonAnimate {
+  animation: pulsate 0.016s ease-in-out infinite alternate;     
+}
+
+/* Pulsating animation */
+@keyframes pulsate {
+    
+  100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  
   }
   
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
+  0% {
+
+    text-shadow:
+    0 0 4px #fff,
+    0 0 8px #fff,
+    0 0 16px #fff,
+    0 0 36px #f09,
+    0 0 73px #f09,
+    0 0 80px #f09,
+    0 0 90px #f09,
+    0 0 130px #f09;
+
   }
+}
+
+.bkg {
+  animation: breath 30s ease-in-out infinite;
+}
+
+.bkg-y {
+  animation: moveit 30s ease-in-out infinite;
+}
+
+@keyframes breath {
+  0%   { transform: scale(1); }
+  50% { transform: scale(1.1618); }
+  100% { transform: scale(1); }
+}
+
+@keyframes moveit {
+  0%   { transform: skew(0deg, 0deg); }
+  50% { transform: skew(-2deg, -2deg); }
+  100% { transform: skew(0deg, 0deg); }
+}
 
 /* ./src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.blog-shadow-dreamy {
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  will-change: opacity;
 }
 
-@font-face {
-  font-family: 'MyFont';
-  src: local('MyFont'), url(./futura.otf) format('otf');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
+.underline-bitch {
+  border-bottom: 2px solid #1f7deb;
 }
